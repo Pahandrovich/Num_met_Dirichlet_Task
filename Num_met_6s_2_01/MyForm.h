@@ -63,8 +63,11 @@ namespace Nummet6s201 {
 	private: System::Windows::Forms::Label^  label14;
 	private: System::Windows::Forms::RadioButton^  radioButton2;
 	private: System::Windows::Forms::RadioButton^  radioButton1;
-	private: System::Windows::Forms::RadioButton^  radioButton3;
 	private: System::Windows::Forms::RadioButton^  radioButton4;
+	private: System::Windows::Forms::RadioButton^  radioButton3;
+
+
+
 	private: System::Windows::Forms::TextBox^  textBox2_eps;
 
 	private: System::Windows::Forms::TextBox^  textBox2_count;
@@ -82,7 +85,9 @@ namespace Nummet6s201 {
 	private: System::Windows::Forms::Label^  label26;
 	private: System::Windows::Forms::Label^  label27;
 	private: System::Windows::Forms::Label^  label28;
-	private: System::Windows::Forms::DataGridView^  dataGridView4;
+	private: System::Windows::Forms::DataGridView^  dataGridView6;
+
+
 	private: System::Windows::Forms::DataGridView^  dataGridView5;
 	private: System::Windows::Forms::TextBox^  textBox2_m;
 
@@ -90,7 +95,9 @@ namespace Nummet6s201 {
 
 	private: System::Windows::Forms::Label^  label29;
 	private: System::Windows::Forms::Label^  label30;
-	private: System::Windows::Forms::DataGridView^  dataGridView6;
+	private: System::Windows::Forms::DataGridView^  dataGridView4;
+
+
 	private: System::Windows::Forms::Button^  button2;
 
 	protected:
@@ -136,8 +143,8 @@ namespace Nummet6s201 {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
-			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
 			this->textBox2_eps = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2_count = (gcnew System::Windows::Forms::TextBox());
 			this->label16 = (gcnew System::Windows::Forms::Label());
@@ -153,13 +160,13 @@ namespace Nummet6s201 {
 			this->label26 = (gcnew System::Windows::Forms::Label());
 			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->label28 = (gcnew System::Windows::Forms::Label());
-			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridView6 = (gcnew System::Windows::Forms::DataGridView());
 			this->dataGridView5 = (gcnew System::Windows::Forms::DataGridView());
 			this->textBox2_m = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2_n = (gcnew System::Windows::Forms::TextBox());
 			this->label29 = (gcnew System::Windows::Forms::Label());
 			this->label30 = (gcnew System::Windows::Forms::Label());
-			this->dataGridView6 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->tabControl1->SuspendLayout();
@@ -167,9 +174,9 @@ namespace Nummet6s201 {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
 			this->tabPage2->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
@@ -178,7 +185,7 @@ namespace Nummet6s201 {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(134, 62);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
+			this->button1->Text = L"Пуск";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -442,8 +449,8 @@ namespace Nummet6s201 {
 			// 
 			// tabPage2
 			// 
-			this->tabPage2->Controls->Add(this->radioButton3);
 			this->tabPage2->Controls->Add(this->radioButton4);
+			this->tabPage2->Controls->Add(this->radioButton3);
 			this->tabPage2->Controls->Add(this->textBox2_eps);
 			this->tabPage2->Controls->Add(this->textBox2_count);
 			this->tabPage2->Controls->Add(this->label16);
@@ -459,13 +466,13 @@ namespace Nummet6s201 {
 			this->tabPage2->Controls->Add(this->label26);
 			this->tabPage2->Controls->Add(this->label27);
 			this->tabPage2->Controls->Add(this->label28);
-			this->tabPage2->Controls->Add(this->dataGridView4);
+			this->tabPage2->Controls->Add(this->dataGridView6);
 			this->tabPage2->Controls->Add(this->dataGridView5);
 			this->tabPage2->Controls->Add(this->textBox2_m);
 			this->tabPage2->Controls->Add(this->textBox2_n);
 			this->tabPage2->Controls->Add(this->label29);
 			this->tabPage2->Controls->Add(this->label30);
-			this->tabPage2->Controls->Add(this->dataGridView6);
+			this->tabPage2->Controls->Add(this->dataGridView4);
 			this->tabPage2->Controls->Add(this->button2);
 			this->tabPage2->Location = System::Drawing::Point(4, 22);
 			this->tabPage2->Name = L"tabPage2";
@@ -475,27 +482,27 @@ namespace Nummet6s201 {
 			this->tabPage2->Text = L"tabPage2";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
-			// radioButton3
-			// 
-			this->radioButton3->AutoSize = true;
-			this->radioButton3->Location = System::Drawing::Point(705, 456);
-			this->radioButton3->Name = L"radioButton3";
-			this->radioButton3->Size = System::Drawing::Size(70, 17);
-			this->radioButton3->TabIndex = 49;
-			this->radioButton3->Text = L"точность";
-			this->radioButton3->UseVisualStyleBackColor = true;
-			// 
 			// radioButton4
 			// 
 			this->radioButton4->AutoSize = true;
-			this->radioButton4->Checked = true;
-			this->radioButton4->Location = System::Drawing::Point(705, 432);
+			this->radioButton4->Location = System::Drawing::Point(705, 456);
 			this->radioButton4->Name = L"radioButton4";
-			this->radioButton4->Size = System::Drawing::Size(72, 17);
-			this->radioButton4->TabIndex = 48;
-			this->radioButton4->TabStop = true;
-			this->radioButton4->Text = L"итерации";
+			this->radioButton4->Size = System::Drawing::Size(70, 17);
+			this->radioButton4->TabIndex = 49;
+			this->radioButton4->Text = L"точность";
 			this->radioButton4->UseVisualStyleBackColor = true;
+			// 
+			// radioButton3
+			// 
+			this->radioButton3->AutoSize = true;
+			this->radioButton3->Checked = true;
+			this->radioButton3->Location = System::Drawing::Point(705, 432);
+			this->radioButton3->Name = L"radioButton3";
+			this->radioButton3->Size = System::Drawing::Size(72, 17);
+			this->radioButton3->TabIndex = 48;
+			this->radioButton3->TabStop = true;
+			this->radioButton3->Text = L"итерации";
+			this->radioButton3->UseVisualStyleBackColor = true;
 			// 
 			// textBox2_eps
 			// 
@@ -630,13 +637,13 @@ namespace Nummet6s201 {
 			this->label28->TabIndex = 33;
 			this->label28->Text = L"макс. глобальная погрешность";
 			// 
-			// dataGridView4
+			// dataGridView6
 			// 
-			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView4->Location = System::Drawing::Point(912, 6);
-			this->dataGridView4->Name = L"dataGridView4";
-			this->dataGridView4->Size = System::Drawing::Size(447, 383);
-			this->dataGridView4->TabIndex = 32;
+			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView6->Location = System::Drawing::Point(912, 6);
+			this->dataGridView6->Name = L"dataGridView6";
+			this->dataGridView6->Size = System::Drawing::Size(447, 383);
+			this->dataGridView6->TabIndex = 32;
 			// 
 			// dataGridView5
 			// 
@@ -680,13 +687,13 @@ namespace Nummet6s201 {
 			this->label30->TabIndex = 27;
 			this->label30->Text = L"n";
 			// 
-			// dataGridView6
+			// dataGridView4
 			// 
-			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView6->Location = System::Drawing::Point(6, 6);
-			this->dataGridView6->Name = L"dataGridView6";
-			this->dataGridView6->Size = System::Drawing::Size(447, 383);
-			this->dataGridView6->TabIndex = 26;
+			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView4->Location = System::Drawing::Point(6, 6);
+			this->dataGridView4->Name = L"dataGridView4";
+			this->dataGridView4->Size = System::Drawing::Size(447, 383);
+			this->dataGridView4->TabIndex = 26;
 			// 
 			// button2
 			// 
@@ -714,9 +721,9 @@ namespace Nummet6s201 {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
 			this->tabPage2->ResumeLayout(false);
 			this->tabPage2->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -802,7 +809,7 @@ namespace Nummet6s201 {
 			label3->Text = "Max GP = " + Convert::ToString(max_GP);
 
 
-		} // END BUTTON CLICK TEST
+		} // end button click TEST
 
 
 
@@ -813,8 +820,78 @@ namespace Nummet6s201 {
 
 		private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) { // MAIN TASK
 
+			dataGridView4->Rows->Clear();
+			dataGridView5->Rows->Clear();
+			dataGridView6->Rows->Clear();
+			dataGridView4->Columns->Clear();
+			dataGridView5->Columns->Clear();
+			dataGridView6->Columns->Clear();
 
-		} // END BUTTON CLICK TEST
+			int n = Convert::ToInt32(textBox2_n->Text);
+			int m = Convert::ToInt32(textBox2_m->Text);
+			double eps = Convert::ToDouble(textBox2_eps->Text);
+			int count_of_iter = Convert::ToInt32(textBox2_count->Text);
+
+			double accuracy = 0;
+			int spent_iter = count_of_iter;
+
+			fill_table(n, m, dataGridView4, dataGridView5, dataGridView6);
+
+			Dirichlet_Main Task(n, m);
+			if (radioButton3->Checked)
+				accuracy = Task.Zeidel_iter(count_of_iter);
+			else
+				accuracy = Task.Zeidel_eps(eps, spent_iter);
+
+			label19->Text = "задача решена за " + Convert::ToString(spent_iter) + "итераций";
+			label18->Text = "точность метода =  " + Convert::ToString(accuracy);
+
+			/*label4->Text = Convert::ToString(Test.A);
+			label5->Text = Convert::ToString(Test.diag1);
+			label6->Text = Convert::ToString(Test.diag2);
+			label7->Text = Convert::ToString(Test.h);
+			label8->Text = Convert::ToString(Test.k);
+			label9->Text = Convert::ToString(n);
+			label10->Text = Convert::ToString(m);*/
+
+			double max_GP = 0;
+			double GP = 0;
+
+			for (int j = m; j >= 0; j--)
+				for (int i = 0; i < n + 1; i++)
+				{
+					dataGridView4[i + 2, m - j + 2]->Value = Task.U_acc(Task.Getx(i), Task.Gety(j));
+				}
+
+			for (int i = 0; i < n + 1; i++)
+			{
+				dataGridView5[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
+				dataGridView5[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+
+				dataGridView6[i + 2, m + 2]->Value = 0;
+				dataGridView6[i + 2, 2]->Value = 0;
+			}
+			for (int j = 1; j < m; j++)
+			{
+				dataGridView5[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
+				dataGridView5[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+
+				dataGridView6[2, m - j + 2]->Value = 0;
+				dataGridView6[n + 2, m - j + 2]->Value = 0;
+			}
+
+			for (int j = 1; j < m; j++)
+				for (int i = 1; i < n; i++)
+				{
+					dataGridView5[i + 2, m - j + 2]->Value = Task.V[Task.Ind_v(i, j)];
+					GP = fabs(Task.V[Task.Ind_v(i, j)] - Task.U_acc(Task.Getx(i), Task.Gety(j)));
+					dataGridView6[i + 2, m - j + 2]->Value = GP;
+					if (GP > max_GP) max_GP = GP;
+				}
+
+			label28->Text = "Max GP = " + Convert::ToString(max_GP);
+
+		} // end button click MAIN
 
         void fill_table(int n, int m, DataGridView ^DGV1, DataGridView ^DGV2, DataGridView ^DGV3)
 		{
