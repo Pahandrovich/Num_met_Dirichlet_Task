@@ -559,11 +559,11 @@ namespace Nummet6s201 {
 			// label20
 			// 
 			this->label20->AutoSize = true;
-			this->label20->Location = System::Drawing::Point(68, 549);
+			this->label20->Location = System::Drawing::Point(456, 485);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(41, 13);
+			this->label20->Size = System::Drawing::Size(101, 13);
 			this->label20->TabIndex = 41;
-			this->label20->Text = L"label20";
+			this->label20->Text = L"точность метода 2";
 			// 
 			// label21
 			// 
@@ -815,8 +815,6 @@ namespace Nummet6s201 {
 
 
 
-		
-
 
 		private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) { // MAIN TASK
 
@@ -833,18 +831,28 @@ namespace Nummet6s201 {
 			int count_of_iter = Convert::ToInt32(textBox2_count->Text);
 
 			double accuracy = 0;
+			double accuracy2 = 0;
 			int spent_iter = count_of_iter;
+			int spent_iter2 = count_of_iter;
 
 			fill_table(n, m, dataGridView4, dataGridView5, dataGridView6);
 
 			Dirichlet_Main Task(n, m);
+			Dirichlet_Main Task2(2*n, 2*m);
 			if (radioButton3->Checked)
+			{
 				accuracy = Task.Zeidel_iter(count_of_iter);
+				accuracy2 = Task2.Zeidel_iter(count_of_iter);
+			}
 			else
+			{
 				accuracy = Task.Zeidel_eps(eps, spent_iter);
+				accuracy2 = Task2.Zeidel_eps(eps, spent_iter2);
+			}
 
 			label19->Text = "задача решена за " + Convert::ToString(spent_iter) + "итераций";
 			label18->Text = "точность метода =  " + Convert::ToString(accuracy);
+			label20->Text = "точность метода 2 =  " + Convert::ToString(accuracy2);
 
 			/*label4->Text = Convert::ToString(Test.A);
 			label5->Text = Convert::ToString(Test.diag1);
@@ -854,8 +862,8 @@ namespace Nummet6s201 {
 			label9->Text = Convert::ToString(n);
 			label10->Text = Convert::ToString(m);*/
 
-			double max_GP = 0;
-			double GP = 0;
+			double max_LP = 0;
+			double LP = 0;
 
 			for (int j = m; j >= 0; j--)
 				for (int i = 0; i < n + 1; i++)
@@ -884,12 +892,12 @@ namespace Nummet6s201 {
 				for (int i = 1; i < n; i++)
 				{
 					dataGridView5[i + 2, m - j + 2]->Value = Task.V[Task.Ind_v(i, j)];
-					GP = fabs(Task.V[Task.Ind_v(i, j)] - Task.U_acc(Task.Getx(i), Task.Gety(j)));
-					dataGridView6[i + 2, m - j + 2]->Value = GP;
-					if (GP > max_GP) max_GP = GP;
+					LP = fabs(Task.V[Task.Ind_v(i, j)] - Task2.V[Task2.Ind_v(2*i,2*j)]);
+					dataGridView6[i + 2, m - j + 2]->Value = LP;
+					if (LP > max_LP) max_LP = LP;
 				}
 
-			label28->Text = "Max GP = " + Convert::ToString(max_GP);
+			label28->Text = "Max LP = " + Convert::ToString(max_LP);
 
 		} // end button click MAIN
 
