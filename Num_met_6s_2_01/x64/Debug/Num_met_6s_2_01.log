@@ -1,8 +1,12 @@
 ﻿  MyForm.cpp
-d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(731): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(732): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(742): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(743): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(806): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(807): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(817): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(818): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(913): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(914): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(924): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(925): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
 d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.cpp(7): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
   DirichletTask.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   Num_met_6s_2_01.vcxproj -> D:\PAVEL\University\VS_Project\Num_met_Dirichlet_Task\x64\Debug\Num_met_6s_2_01.exe
