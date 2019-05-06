@@ -105,6 +105,35 @@ namespace Nummet6s201 {
 	private: System::Windows::Forms::Label^  label8;
 	private: System::Windows::Forms::Label^  label11;
 	private: System::Windows::Forms::Label^  label10;
+	private: System::Windows::Forms::TabPage^  tabPage3;
+	private: System::Windows::Forms::Label^  label21;
+	private: System::Windows::Forms::Label^  label22;
+	private: System::Windows::Forms::Label^  label23;
+	private: System::Windows::Forms::TextBox^  textBox3_out;
+	private: System::Windows::Forms::RadioButton^  radioButton6;
+	private: System::Windows::Forms::RadioButton^  radioButton5;
+
+
+
+	private: System::Windows::Forms::TextBox^  textBox3_eps;
+	private: System::Windows::Forms::TextBox^  textBox3_count;
+	private: System::Windows::Forms::Label^  label24;
+	private: System::Windows::Forms::Label^  label31;
+	private: System::Windows::Forms::Label^  label32;
+	private: System::Windows::Forms::Label^  label33;
+	private: System::Windows::Forms::Label^  label34;
+	private: System::Windows::Forms::Label^  label35;
+	private: System::Windows::Forms::Label^  label36;
+	private: System::Windows::Forms::Label^  label37;
+	private: System::Windows::Forms::Label^  label38;
+	private: System::Windows::Forms::DataGridView^  dataGridView9;
+	private: System::Windows::Forms::DataGridView^  dataGridView8;
+	private: System::Windows::Forms::TextBox^  textBox3_m;
+	private: System::Windows::Forms::TextBox^  textBox3_n;
+	private: System::Windows::Forms::Label^  label39;
+	private: System::Windows::Forms::Label^  label40;
+	private: System::Windows::Forms::DataGridView^  dataGridView7;
+	private: System::Windows::Forms::Button^  button3;
 
 	protected:
 
@@ -171,6 +200,32 @@ namespace Nummet6s201 {
 			this->label30 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->label22 = (gcnew System::Windows::Forms::Label());
+			this->label23 = (gcnew System::Windows::Forms::Label());
+			this->textBox3_out = (gcnew System::Windows::Forms::TextBox());
+			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
+			this->textBox3_eps = (gcnew System::Windows::Forms::TextBox());
+			this->textBox3_count = (gcnew System::Windows::Forms::TextBox());
+			this->label24 = (gcnew System::Windows::Forms::Label());
+			this->label31 = (gcnew System::Windows::Forms::Label());
+			this->label32 = (gcnew System::Windows::Forms::Label());
+			this->label33 = (gcnew System::Windows::Forms::Label());
+			this->label34 = (gcnew System::Windows::Forms::Label());
+			this->label35 = (gcnew System::Windows::Forms::Label());
+			this->label36 = (gcnew System::Windows::Forms::Label());
+			this->label37 = (gcnew System::Windows::Forms::Label());
+			this->label38 = (gcnew System::Windows::Forms::Label());
+			this->dataGridView9 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridView8 = (gcnew System::Windows::Forms::DataGridView());
+			this->textBox3_m = (gcnew System::Windows::Forms::TextBox());
+			this->textBox3_n = (gcnew System::Windows::Forms::TextBox());
+			this->label39 = (gcnew System::Windows::Forms::Label());
+			this->label40 = (gcnew System::Windows::Forms::Label());
+			this->dataGridView7 = (gcnew System::Windows::Forms::DataGridView());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -180,14 +235,17 @@ namespace Nummet6s201 {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
+			this->tabPage3->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView9))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView7))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(1465, 569);
-			this->button1->Margin = System::Windows::Forms::Padding(4);
+			this->button1->Location = System::Drawing::Point(1099, 462);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(179, 76);
+			this->button1->Size = System::Drawing::Size(134, 62);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Пуск";
 			this->button1->UseVisualStyleBackColor = true;
@@ -196,21 +254,20 @@ namespace Nummet6s201 {
 			// dataGridView1
 			// 
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(8, 7);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(4);
+			this->dataGridView1->Location = System::Drawing::Point(6, 6);
 			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(596, 471);
+			this->dataGridView1->Size = System::Drawing::Size(447, 383);
 			this->dataGridView1->TabIndex = 1;
 			// 
 			// tabControl1
 			// 
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
-			this->tabControl1->Location = System::Drawing::Point(3, 4);
-			this->tabControl1->Margin = System::Windows::Forms::Padding(4);
+			this->tabControl1->Controls->Add(this->tabPage3);
+			this->tabControl1->Location = System::Drawing::Point(2, 3);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(1909, 778);
+			this->tabControl1->Size = System::Drawing::Size(1432, 632);
 			this->tabControl1->TabIndex = 2;
 			// 
 			// tabPage1
@@ -237,11 +294,10 @@ namespace Nummet6s201 {
 			this->tabPage1->Controls->Add(this->label1);
 			this->tabPage1->Controls->Add(this->dataGridView1);
 			this->tabPage1->Controls->Add(this->button1);
-			this->tabPage1->Location = System::Drawing::Point(4, 25);
-			this->tabPage1->Margin = System::Windows::Forms::Padding(4);
+			this->tabPage1->Location = System::Drawing::Point(4, 22);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(4);
-			this->tabPage1->Size = System::Drawing::Size(1901, 749);
+			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage1->Size = System::Drawing::Size(1424, 606);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Тестовая";
 			this->tabPage1->UseVisualStyleBackColor = true;
@@ -249,28 +305,29 @@ namespace Nummet6s201 {
 			// label11
 			// 
 			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(102, 712);
+			this->label11->Location = System::Drawing::Point(76, 578);
+			this->label11->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(27, 17);
+			this->label11->Size = System::Drawing::Size(21, 13);
 			this->label11->TabIndex = 26;
 			this->label11->Text = L"j = ";
 			// 
 			// label10
 			// 
 			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(102, 680);
+			this->label10->Location = System::Drawing::Point(76, 552);
+			this->label10->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(27, 17);
+			this->label10->Size = System::Drawing::Size(21, 13);
 			this->label10->TabIndex = 25;
 			this->label10->Text = L"i = ";
 			// 
 			// radioButton2
 			// 
 			this->radioButton2->AutoSize = true;
-			this->radioButton2->Location = System::Drawing::Point(995, 617);
-			this->radioButton2->Margin = System::Windows::Forms::Padding(4);
+			this->radioButton2->Location = System::Drawing::Point(746, 501);
 			this->radioButton2->Name = L"radioButton2";
-			this->radioButton2->Size = System::Drawing::Size(89, 21);
+			this->radioButton2->Size = System::Drawing::Size(70, 17);
 			this->radioButton2->TabIndex = 24;
 			this->radioButton2->Text = L"точность";
 			this->radioButton2->UseVisualStyleBackColor = true;
@@ -279,10 +336,9 @@ namespace Nummet6s201 {
 			// 
 			this->radioButton1->AutoSize = true;
 			this->radioButton1->Checked = true;
-			this->radioButton1->Location = System::Drawing::Point(995, 588);
-			this->radioButton1->Margin = System::Windows::Forms::Padding(4);
+			this->radioButton1->Location = System::Drawing::Point(746, 478);
 			this->radioButton1->Name = L"radioButton1";
-			this->radioButton1->Size = System::Drawing::Size(92, 21);
+			this->radioButton1->Size = System::Drawing::Size(72, 17);
 			this->radioButton1->TabIndex = 23;
 			this->radioButton1->TabStop = true;
 			this->radioButton1->Text = L"итерации";
@@ -290,155 +346,139 @@ namespace Nummet6s201 {
 			// 
 			// textBox1_eps
 			// 
-			this->textBox1_eps->Location = System::Drawing::Point(1235, 616);
-			this->textBox1_eps->Margin = System::Windows::Forms::Padding(4);
+			this->textBox1_eps->Location = System::Drawing::Point(926, 500);
 			this->textBox1_eps->Name = L"textBox1_eps";
-			this->textBox1_eps->Size = System::Drawing::Size(132, 22);
+			this->textBox1_eps->Size = System::Drawing::Size(100, 20);
 			this->textBox1_eps->TabIndex = 22;
 			this->textBox1_eps->Text = L"1e-6";
 			// 
 			// textBox1_count
 			// 
-			this->textBox1_count->Location = System::Drawing::Point(1235, 584);
-			this->textBox1_count->Margin = System::Windows::Forms::Padding(4);
+			this->textBox1_count->Location = System::Drawing::Point(926, 474);
 			this->textBox1_count->Name = L"textBox1_count";
-			this->textBox1_count->Size = System::Drawing::Size(132, 22);
+			this->textBox1_count->Size = System::Drawing::Size(100, 20);
 			this->textBox1_count->TabIndex = 21;
 			this->textBox1_count->Text = L"30";
 			// 
 			// label15
 			// 
 			this->label15->AutoSize = true;
-			this->label15->Location = System::Drawing::Point(1171, 620);
-			this->label15->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label15->Location = System::Drawing::Point(878, 504);
 			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(31, 17);
+			this->label15->Size = System::Drawing::Size(24, 13);
 			this->label15->TabIndex = 20;
 			this->label15->Text = L"eps";
 			// 
 			// label14
 			// 
 			this->label14->AutoSize = true;
-			this->label14->Location = System::Drawing::Point(1143, 588);
-			this->label14->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label14->Location = System::Drawing::Point(857, 478);
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(83, 17);
+			this->label14->Size = System::Drawing::Size(63, 13);
 			this->label14->TabIndex = 19;
 			this->label14->Text = L"count of iter";
 			// 
 			// label13
 			// 
 			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(99, 584);
-			this->label13->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label13->Location = System::Drawing::Point(74, 474);
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(205, 17);
+			this->label13->Size = System::Drawing::Size(157, 13);
 			this->label13->TabIndex = 18;
 			this->label13->Text = L"достигнутая точность метода";
 			// 
 			// label12
 			// 
 			this->label12->AutoSize = true;
-			this->label12->Location = System::Drawing::Point(99, 548);
-			this->label12->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label12->Location = System::Drawing::Point(74, 445);
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(249, 17);
+			this->label12->Size = System::Drawing::Size(188, 13);
 			this->label12->TabIndex = 17;
 			this->label12->Text = L"затраченное колличество итераций";
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(1498, 482);
-			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label6->Location = System::Drawing::Point(1124, 392);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(68, 17);
+			this->label6->Size = System::Drawing::Size(54, 13);
 			this->label6->TabIndex = 11;
 			this->label6->Text = L"разность";
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(862, 482);
-			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label5->Location = System::Drawing::Point(646, 392);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(142, 17);
+			this->label5->Size = System::Drawing::Size(107, 13);
 			this->label5->TabIndex = 10;
 			this->label5->Text = L"численное решение";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(227, 491);
-			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Location = System::Drawing::Point(170, 399);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(116, 17);
+			this->label4->Size = System::Drawing::Size(87, 13);
 			this->label4->TabIndex = 9;
 			this->label4->Text = L"точная функция";
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(99, 644);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Location = System::Drawing::Point(74, 523);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(212, 17);
+			this->label3->Size = System::Drawing::Size(167, 13);
 			this->label3->TabIndex = 8;
 			this->label3->Text = L"макс. глобальная погрешность";
 			// 
 			// dataGridView3
 			// 
 			this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView3->Location = System::Drawing::Point(1216, 7);
-			this->dataGridView3->Margin = System::Windows::Forms::Padding(4);
+			this->dataGridView3->Location = System::Drawing::Point(912, 6);
 			this->dataGridView3->Name = L"dataGridView3";
-			this->dataGridView3->Size = System::Drawing::Size(596, 471);
+			this->dataGridView3->Size = System::Drawing::Size(447, 383);
 			this->dataGridView3->TabIndex = 7;
 			// 
 			// dataGridView2
 			// 
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView2->Location = System::Drawing::Point(612, 7);
-			this->dataGridView2->Margin = System::Windows::Forms::Padding(4);
+			this->dataGridView2->Location = System::Drawing::Point(459, 6);
 			this->dataGridView2->Name = L"dataGridView2";
-			this->dataGridView2->Size = System::Drawing::Size(596, 471);
+			this->dataGridView2->Size = System::Drawing::Size(447, 383);
 			this->dataGridView2->TabIndex = 6;
 			// 
 			// textBox1_m
 			// 
-			this->textBox1_m->Location = System::Drawing::Point(1235, 676);
-			this->textBox1_m->Margin = System::Windows::Forms::Padding(4);
+			this->textBox1_m->Location = System::Drawing::Point(926, 549);
 			this->textBox1_m->Name = L"textBox1_m";
-			this->textBox1_m->Size = System::Drawing::Size(132, 22);
+			this->textBox1_m->Size = System::Drawing::Size(100, 20);
 			this->textBox1_m->TabIndex = 5;
 			this->textBox1_m->Text = L"5";
 			// 
 			// textBox1_n
 			// 
-			this->textBox1_n->Location = System::Drawing::Point(1235, 644);
-			this->textBox1_n->Margin = System::Windows::Forms::Padding(4);
+			this->textBox1_n->Location = System::Drawing::Point(926, 523);
 			this->textBox1_n->Name = L"textBox1_n";
-			this->textBox1_n->Size = System::Drawing::Size(132, 22);
+			this->textBox1_n->Size = System::Drawing::Size(100, 20);
 			this->textBox1_n->TabIndex = 4;
 			this->textBox1_n->Text = L"4";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(1183, 680);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Location = System::Drawing::Point(887, 552);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(19, 17);
+			this->label2->Size = System::Drawing::Size(15, 13);
 			this->label2->TabIndex = 3;
 			this->label2->Text = L"m";
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(1183, 644);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(887, 523);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(16, 17);
+			this->label1->Size = System::Drawing::Size(13, 13);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"n";
 			// 
@@ -469,11 +509,10 @@ namespace Nummet6s201 {
 			this->tabPage2->Controls->Add(this->label30);
 			this->tabPage2->Controls->Add(this->dataGridView4);
 			this->tabPage2->Controls->Add(this->button2);
-			this->tabPage2->Location = System::Drawing::Point(4, 25);
-			this->tabPage2->Margin = System::Windows::Forms::Padding(4);
+			this->tabPage2->Location = System::Drawing::Point(4, 22);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(4);
-			this->tabPage2->Size = System::Drawing::Size(1901, 749);
+			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage2->Size = System::Drawing::Size(1424, 606);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Основная";
 			this->tabPage2->UseVisualStyleBackColor = true;
@@ -481,47 +520,46 @@ namespace Nummet6s201 {
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(151, 713);
+			this->label9->Location = System::Drawing::Point(113, 579);
+			this->label9->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(27, 17);
+			this->label9->Size = System::Drawing::Size(21, 13);
 			this->label9->TabIndex = 53;
 			this->label9->Text = L"j = ";
 			// 
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(151, 683);
+			this->label8->Location = System::Drawing::Point(113, 555);
+			this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(27, 17);
+			this->label8->Size = System::Drawing::Size(21, 13);
 			this->label8->TabIndex = 52;
 			this->label8->Text = L"i = ";
 			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(1128, 672);
-			this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label7->Location = System::Drawing::Point(846, 546);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(28, 17);
+			this->label7->Size = System::Drawing::Size(22, 13);
 			this->label7->TabIndex = 51;
 			this->label7->Text = L"out";
 			// 
 			// textBox2_out
 			// 
-			this->textBox2_out->Location = System::Drawing::Point(1180, 669);
-			this->textBox2_out->Margin = System::Windows::Forms::Padding(4);
+			this->textBox2_out->Location = System::Drawing::Point(885, 544);
 			this->textBox2_out->Name = L"textBox2_out";
-			this->textBox2_out->Size = System::Drawing::Size(132, 22);
+			this->textBox2_out->Size = System::Drawing::Size(100, 20);
 			this->textBox2_out->TabIndex = 50;
 			this->textBox2_out->Text = L"21";
 			// 
 			// radioButton4
 			// 
 			this->radioButton4->AutoSize = true;
-			this->radioButton4->Location = System::Drawing::Point(940, 561);
-			this->radioButton4->Margin = System::Windows::Forms::Padding(4);
+			this->radioButton4->Location = System::Drawing::Point(705, 456);
 			this->radioButton4->Name = L"radioButton4";
-			this->radioButton4->Size = System::Drawing::Size(89, 21);
+			this->radioButton4->Size = System::Drawing::Size(70, 17);
 			this->radioButton4->TabIndex = 49;
 			this->radioButton4->Text = L"точность";
 			this->radioButton4->UseVisualStyleBackColor = true;
@@ -530,10 +568,9 @@ namespace Nummet6s201 {
 			// 
 			this->radioButton3->AutoSize = true;
 			this->radioButton3->Checked = true;
-			this->radioButton3->Location = System::Drawing::Point(940, 532);
-			this->radioButton3->Margin = System::Windows::Forms::Padding(4);
+			this->radioButton3->Location = System::Drawing::Point(705, 432);
 			this->radioButton3->Name = L"radioButton3";
-			this->radioButton3->Size = System::Drawing::Size(92, 21);
+			this->radioButton3->Size = System::Drawing::Size(72, 17);
 			this->radioButton3->TabIndex = 48;
 			this->radioButton3->TabStop = true;
 			this->radioButton3->Text = L"итерации";
@@ -541,195 +578,434 @@ namespace Nummet6s201 {
 			// 
 			// textBox2_eps
 			// 
-			this->textBox2_eps->Location = System::Drawing::Point(1180, 560);
-			this->textBox2_eps->Margin = System::Windows::Forms::Padding(4);
+			this->textBox2_eps->Location = System::Drawing::Point(885, 455);
 			this->textBox2_eps->Name = L"textBox2_eps";
-			this->textBox2_eps->Size = System::Drawing::Size(132, 22);
+			this->textBox2_eps->Size = System::Drawing::Size(100, 20);
 			this->textBox2_eps->TabIndex = 47;
 			this->textBox2_eps->Text = L"1e-6";
 			// 
 			// textBox2_count
 			// 
-			this->textBox2_count->Location = System::Drawing::Point(1180, 528);
-			this->textBox2_count->Margin = System::Windows::Forms::Padding(4);
+			this->textBox2_count->Location = System::Drawing::Point(885, 429);
 			this->textBox2_count->Name = L"textBox2_count";
-			this->textBox2_count->Size = System::Drawing::Size(132, 22);
+			this->textBox2_count->Size = System::Drawing::Size(100, 20);
 			this->textBox2_count->TabIndex = 46;
 			this->textBox2_count->Text = L"30";
 			// 
 			// label16
 			// 
 			this->label16->AutoSize = true;
-			this->label16->Location = System::Drawing::Point(1116, 564);
-			this->label16->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label16->Location = System::Drawing::Point(837, 458);
 			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(31, 17);
+			this->label16->Size = System::Drawing::Size(24, 13);
 			this->label16->TabIndex = 45;
 			this->label16->Text = L"eps";
 			// 
 			// label17
 			// 
 			this->label17->AutoSize = true;
-			this->label17->Location = System::Drawing::Point(1088, 532);
-			this->label17->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label17->Location = System::Drawing::Point(816, 432);
 			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(83, 17);
+			this->label17->Size = System::Drawing::Size(63, 13);
 			this->label17->TabIndex = 44;
 			this->label17->Text = L"count of iter";
 			// 
 			// label18
 			// 
 			this->label18->AutoSize = true;
-			this->label18->Location = System::Drawing::Point(151, 584);
-			this->label18->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label18->Location = System::Drawing::Point(113, 474);
 			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(205, 17);
+			this->label18->Size = System::Drawing::Size(157, 13);
 			this->label18->TabIndex = 43;
 			this->label18->Text = L"достигнутая точность метода";
 			// 
 			// label19
 			// 
 			this->label19->AutoSize = true;
-			this->label19->Location = System::Drawing::Point(151, 548);
-			this->label19->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label19->Location = System::Drawing::Point(113, 445);
 			this->label19->Name = L"label19";
-			this->label19->Size = System::Drawing::Size(249, 17);
+			this->label19->Size = System::Drawing::Size(188, 13);
 			this->label19->TabIndex = 42;
 			this->label19->Text = L"затраченное колличество итераций";
 			// 
 			// label20
 			// 
 			this->label20->AutoSize = true;
-			this->label20->Location = System::Drawing::Point(151, 621);
-			this->label20->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label20->Location = System::Drawing::Point(113, 505);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(132, 17);
+			this->label20->Size = System::Drawing::Size(101, 13);
 			this->label20->TabIndex = 41;
 			this->label20->Text = L"точность метода 2";
 			// 
 			// label25
 			// 
 			this->label25->AutoSize = true;
-			this->label25->Location = System::Drawing::Point(1513, 482);
-			this->label25->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label25->Location = System::Drawing::Point(1135, 392);
 			this->label25->Name = L"label25";
-			this->label25->Size = System::Drawing::Size(68, 17);
+			this->label25->Size = System::Drawing::Size(54, 13);
 			this->label25->TabIndex = 36;
 			this->label25->Text = L"разность";
 			// 
 			// label26
 			// 
 			this->label26->AutoSize = true;
-			this->label26->Location = System::Drawing::Point(869, 482);
-			this->label26->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label26->Location = System::Drawing::Point(652, 392);
 			this->label26->Name = L"label26";
-			this->label26->Size = System::Drawing::Size(142, 17);
+			this->label26->Size = System::Drawing::Size(107, 13);
 			this->label26->TabIndex = 35;
 			this->label26->Text = L"численное решение";
 			// 
 			// label27
 			// 
 			this->label27->AutoSize = true;
-			this->label27->Location = System::Drawing::Point(247, 482);
-			this->label27->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label27->Location = System::Drawing::Point(185, 392);
 			this->label27->Name = L"label27";
-			this->label27->Size = System::Drawing::Size(255, 17);
+			this->label27->Size = System::Drawing::Size(195, 13);
 			this->label27->TabIndex = 34;
 			this->label27->Text = L"численное решение на мелкой сетке";
 			// 
 			// label28
 			// 
 			this->label28->AutoSize = true;
-			this->label28->Location = System::Drawing::Point(151, 652);
-			this->label28->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label28->Location = System::Drawing::Point(113, 530);
 			this->label28->Name = L"label28";
-			this->label28->Size = System::Drawing::Size(206, 17);
+			this->label28->Size = System::Drawing::Size(162, 13);
 			this->label28->TabIndex = 33;
 			this->label28->Text = L"макс. локальная погрешность";
 			// 
 			// dataGridView6
 			// 
 			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView6->Location = System::Drawing::Point(1216, 7);
-			this->dataGridView6->Margin = System::Windows::Forms::Padding(4);
+			this->dataGridView6->Location = System::Drawing::Point(912, 6);
 			this->dataGridView6->Name = L"dataGridView6";
-			this->dataGridView6->Size = System::Drawing::Size(596, 471);
+			this->dataGridView6->Size = System::Drawing::Size(447, 383);
 			this->dataGridView6->TabIndex = 32;
 			// 
 			// dataGridView5
 			// 
 			this->dataGridView5->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView5->Location = System::Drawing::Point(612, 7);
-			this->dataGridView5->Margin = System::Windows::Forms::Padding(4);
+			this->dataGridView5->Location = System::Drawing::Point(459, 6);
 			this->dataGridView5->Name = L"dataGridView5";
-			this->dataGridView5->Size = System::Drawing::Size(596, 471);
+			this->dataGridView5->Size = System::Drawing::Size(447, 383);
 			this->dataGridView5->TabIndex = 31;
 			// 
 			// textBox2_m
 			// 
-			this->textBox2_m->Location = System::Drawing::Point(1180, 620);
-			this->textBox2_m->Margin = System::Windows::Forms::Padding(4);
+			this->textBox2_m->Location = System::Drawing::Point(885, 504);
 			this->textBox2_m->Name = L"textBox2_m";
-			this->textBox2_m->Size = System::Drawing::Size(132, 22);
+			this->textBox2_m->Size = System::Drawing::Size(100, 20);
 			this->textBox2_m->TabIndex = 30;
 			this->textBox2_m->Text = L"5";
 			// 
 			// textBox2_n
 			// 
-			this->textBox2_n->Location = System::Drawing::Point(1180, 588);
-			this->textBox2_n->Margin = System::Windows::Forms::Padding(4);
+			this->textBox2_n->Location = System::Drawing::Point(885, 478);
 			this->textBox2_n->Name = L"textBox2_n";
-			this->textBox2_n->Size = System::Drawing::Size(132, 22);
+			this->textBox2_n->Size = System::Drawing::Size(100, 20);
 			this->textBox2_n->TabIndex = 29;
 			this->textBox2_n->Text = L"4";
 			// 
 			// label29
 			// 
 			this->label29->AutoSize = true;
-			this->label29->Location = System::Drawing::Point(1128, 624);
-			this->label29->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label29->Location = System::Drawing::Point(846, 507);
 			this->label29->Name = L"label29";
-			this->label29->Size = System::Drawing::Size(19, 17);
+			this->label29->Size = System::Drawing::Size(15, 13);
 			this->label29->TabIndex = 28;
 			this->label29->Text = L"m";
 			// 
 			// label30
 			// 
 			this->label30->AutoSize = true;
-			this->label30->Location = System::Drawing::Point(1128, 588);
-			this->label30->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label30->Location = System::Drawing::Point(846, 478);
 			this->label30->Name = L"label30";
-			this->label30->Size = System::Drawing::Size(16, 17);
+			this->label30->Size = System::Drawing::Size(13, 13);
 			this->label30->TabIndex = 27;
 			this->label30->Text = L"n";
 			// 
 			// dataGridView4
 			// 
 			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView4->Location = System::Drawing::Point(8, 7);
-			this->dataGridView4->Margin = System::Windows::Forms::Padding(4);
+			this->dataGridView4->Location = System::Drawing::Point(6, 6);
 			this->dataGridView4->Name = L"dataGridView4";
-			this->dataGridView4->Size = System::Drawing::Size(596, 471);
+			this->dataGridView4->Size = System::Drawing::Size(447, 383);
 			this->dataGridView4->TabIndex = 26;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(1465, 569);
-			this->button2->Margin = System::Windows::Forms::Padding(4);
+			this->button2->Location = System::Drawing::Point(1099, 462);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(179, 76);
+			this->button2->Size = System::Drawing::Size(134, 62);
 			this->button2->TabIndex = 25;
 			this->button2->Text = L"Пуск";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
+			// tabPage3
+			// 
+			this->tabPage3->Controls->Add(this->label21);
+			this->tabPage3->Controls->Add(this->label22);
+			this->tabPage3->Controls->Add(this->label23);
+			this->tabPage3->Controls->Add(this->textBox3_out);
+			this->tabPage3->Controls->Add(this->radioButton6);
+			this->tabPage3->Controls->Add(this->radioButton5);
+			this->tabPage3->Controls->Add(this->textBox3_eps);
+			this->tabPage3->Controls->Add(this->textBox3_count);
+			this->tabPage3->Controls->Add(this->label24);
+			this->tabPage3->Controls->Add(this->label31);
+			this->tabPage3->Controls->Add(this->label32);
+			this->tabPage3->Controls->Add(this->label33);
+			this->tabPage3->Controls->Add(this->label34);
+			this->tabPage3->Controls->Add(this->label35);
+			this->tabPage3->Controls->Add(this->label36);
+			this->tabPage3->Controls->Add(this->label37);
+			this->tabPage3->Controls->Add(this->label38);
+			this->tabPage3->Controls->Add(this->dataGridView9);
+			this->tabPage3->Controls->Add(this->dataGridView8);
+			this->tabPage3->Controls->Add(this->textBox3_m);
+			this->tabPage3->Controls->Add(this->textBox3_n);
+			this->tabPage3->Controls->Add(this->label39);
+			this->tabPage3->Controls->Add(this->label40);
+			this->tabPage3->Controls->Add(this->dataGridView7);
+			this->tabPage3->Controls->Add(this->button3);
+			this->tabPage3->Location = System::Drawing::Point(4, 22);
+			this->tabPage3->Name = L"tabPage3";
+			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage3->Size = System::Drawing::Size(1424, 606);
+			this->tabPage3->TabIndex = 2;
+			this->tabPage3->Text = L"tabPage3";
+			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// label21
+			// 
+			this->label21->AutoSize = true;
+			this->label21->Location = System::Drawing::Point(124, 579);
+			this->label21->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label21->Name = L"label21";
+			this->label21->Size = System::Drawing::Size(21, 13);
+			this->label21->TabIndex = 78;
+			this->label21->Text = L"j = ";
+			// 
+			// label22
+			// 
+			this->label22->AutoSize = true;
+			this->label22->Location = System::Drawing::Point(124, 555);
+			this->label22->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label22->Name = L"label22";
+			this->label22->Size = System::Drawing::Size(21, 13);
+			this->label22->TabIndex = 77;
+			this->label22->Text = L"i = ";
+			// 
+			// label23
+			// 
+			this->label23->AutoSize = true;
+			this->label23->Location = System::Drawing::Point(857, 546);
+			this->label23->Name = L"label23";
+			this->label23->Size = System::Drawing::Size(22, 13);
+			this->label23->TabIndex = 76;
+			this->label23->Text = L"out";
+			// 
+			// textBox3_out
+			// 
+			this->textBox3_out->Location = System::Drawing::Point(896, 544);
+			this->textBox3_out->Name = L"textBox3_out";
+			this->textBox3_out->Size = System::Drawing::Size(100, 20);
+			this->textBox3_out->TabIndex = 75;
+			this->textBox3_out->Text = L"21";
+			// 
+			// radioButton6
+			// 
+			this->radioButton6->AutoSize = true;
+			this->radioButton6->Location = System::Drawing::Point(716, 456);
+			this->radioButton6->Name = L"radioButton6";
+			this->radioButton6->Size = System::Drawing::Size(70, 17);
+			this->radioButton6->TabIndex = 74;
+			this->radioButton6->Text = L"точность";
+			this->radioButton6->UseVisualStyleBackColor = true;
+			// 
+			// radioButton5
+			// 
+			this->radioButton5->AutoSize = true;
+			this->radioButton5->Checked = true;
+			this->radioButton5->Location = System::Drawing::Point(716, 432);
+			this->radioButton5->Name = L"radioButton5";
+			this->radioButton5->Size = System::Drawing::Size(72, 17);
+			this->radioButton5->TabIndex = 73;
+			this->radioButton5->TabStop = true;
+			this->radioButton5->Text = L"итерации";
+			this->radioButton5->UseVisualStyleBackColor = true;
+			// 
+			// textBox3_eps
+			// 
+			this->textBox3_eps->Location = System::Drawing::Point(896, 455);
+			this->textBox3_eps->Name = L"textBox3_eps";
+			this->textBox3_eps->Size = System::Drawing::Size(100, 20);
+			this->textBox3_eps->TabIndex = 72;
+			this->textBox3_eps->Text = L"1e-6";
+			// 
+			// textBox3_count
+			// 
+			this->textBox3_count->Location = System::Drawing::Point(896, 429);
+			this->textBox3_count->Name = L"textBox3_count";
+			this->textBox3_count->Size = System::Drawing::Size(100, 20);
+			this->textBox3_count->TabIndex = 71;
+			this->textBox3_count->Text = L"30";
+			// 
+			// label24
+			// 
+			this->label24->AutoSize = true;
+			this->label24->Location = System::Drawing::Point(848, 458);
+			this->label24->Name = L"label24";
+			this->label24->Size = System::Drawing::Size(24, 13);
+			this->label24->TabIndex = 70;
+			this->label24->Text = L"eps";
+			// 
+			// label31
+			// 
+			this->label31->AutoSize = true;
+			this->label31->Location = System::Drawing::Point(827, 432);
+			this->label31->Name = L"label31";
+			this->label31->Size = System::Drawing::Size(63, 13);
+			this->label31->TabIndex = 69;
+			this->label31->Text = L"count of iter";
+			// 
+			// label32
+			// 
+			this->label32->AutoSize = true;
+			this->label32->Location = System::Drawing::Point(124, 474);
+			this->label32->Name = L"label32";
+			this->label32->Size = System::Drawing::Size(157, 13);
+			this->label32->TabIndex = 68;
+			this->label32->Text = L"достигнутая точность метода";
+			// 
+			// label33
+			// 
+			this->label33->AutoSize = true;
+			this->label33->Location = System::Drawing::Point(124, 445);
+			this->label33->Name = L"label33";
+			this->label33->Size = System::Drawing::Size(188, 13);
+			this->label33->TabIndex = 67;
+			this->label33->Text = L"затраченное колличество итераций";
+			// 
+			// label34
+			// 
+			this->label34->AutoSize = true;
+			this->label34->Location = System::Drawing::Point(124, 505);
+			this->label34->Name = L"label34";
+			this->label34->Size = System::Drawing::Size(101, 13);
+			this->label34->TabIndex = 66;
+			this->label34->Text = L"точность метода 2";
+			// 
+			// label35
+			// 
+			this->label35->AutoSize = true;
+			this->label35->Location = System::Drawing::Point(1146, 392);
+			this->label35->Name = L"label35";
+			this->label35->Size = System::Drawing::Size(54, 13);
+			this->label35->TabIndex = 65;
+			this->label35->Text = L"разность";
+			// 
+			// label36
+			// 
+			this->label36->AutoSize = true;
+			this->label36->Location = System::Drawing::Point(663, 392);
+			this->label36->Name = L"label36";
+			this->label36->Size = System::Drawing::Size(107, 13);
+			this->label36->TabIndex = 64;
+			this->label36->Text = L"численное решение";
+			// 
+			// label37
+			// 
+			this->label37->AutoSize = true;
+			this->label37->Location = System::Drawing::Point(196, 392);
+			this->label37->Name = L"label37";
+			this->label37->Size = System::Drawing::Size(195, 13);
+			this->label37->TabIndex = 63;
+			this->label37->Text = L"численное решение на мелкой сетке";
+			// 
+			// label38
+			// 
+			this->label38->AutoSize = true;
+			this->label38->Location = System::Drawing::Point(124, 530);
+			this->label38->Name = L"label38";
+			this->label38->Size = System::Drawing::Size(162, 13);
+			this->label38->TabIndex = 62;
+			this->label38->Text = L"макс. локальная погрешность";
+			// 
+			// dataGridView9
+			// 
+			this->dataGridView9->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView9->Location = System::Drawing::Point(923, 6);
+			this->dataGridView9->Name = L"dataGridView9";
+			this->dataGridView9->Size = System::Drawing::Size(447, 383);
+			this->dataGridView9->TabIndex = 61;
+			// 
+			// dataGridView8
+			// 
+			this->dataGridView8->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView8->Location = System::Drawing::Point(470, 6);
+			this->dataGridView8->Name = L"dataGridView8";
+			this->dataGridView8->Size = System::Drawing::Size(447, 383);
+			this->dataGridView8->TabIndex = 60;
+			// 
+			// textBox3_m
+			// 
+			this->textBox3_m->Location = System::Drawing::Point(896, 504);
+			this->textBox3_m->Name = L"textBox3_m";
+			this->textBox3_m->Size = System::Drawing::Size(100, 20);
+			this->textBox3_m->TabIndex = 59;
+			this->textBox3_m->Text = L"5";
+			// 
+			// textBox3_n
+			// 
+			this->textBox3_n->Location = System::Drawing::Point(896, 478);
+			this->textBox3_n->Name = L"textBox3_n";
+			this->textBox3_n->Size = System::Drawing::Size(100, 20);
+			this->textBox3_n->TabIndex = 58;
+			this->textBox3_n->Text = L"4";
+			// 
+			// label39
+			// 
+			this->label39->AutoSize = true;
+			this->label39->Location = System::Drawing::Point(857, 507);
+			this->label39->Name = L"label39";
+			this->label39->Size = System::Drawing::Size(15, 13);
+			this->label39->TabIndex = 57;
+			this->label39->Text = L"m";
+			// 
+			// label40
+			// 
+			this->label40->AutoSize = true;
+			this->label40->Location = System::Drawing::Point(857, 478);
+			this->label40->Name = L"label40";
+			this->label40->Size = System::Drawing::Size(13, 13);
+			this->label40->TabIndex = 56;
+			this->label40->Text = L"n";
+			// 
+			// dataGridView7
+			// 
+			this->dataGridView7->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView7->Location = System::Drawing::Point(17, 6);
+			this->dataGridView7->Name = L"dataGridView7";
+			this->dataGridView7->Size = System::Drawing::Size(447, 383);
+			this->dataGridView7->TabIndex = 55;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(1110, 462);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(134, 62);
+			this->button3->TabIndex = 54;
+			this->button3->Text = L"Пуск";
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1920, 783);
+			this->ClientSize = System::Drawing::Size(1440, 636);
 			this->Controls->Add(this->tabControl1);
-			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
@@ -743,6 +1019,11 @@ namespace Nummet6s201 {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
+			this->tabPage3->ResumeLayout(false);
+			this->tabPage3->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView9))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView7))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -950,6 +1231,113 @@ namespace Nummet6s201 {
 
 		} // end button click MAIN
 
+		private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) { // LAB WORK 3
+
+			dataGridView7->Rows->Clear();
+			dataGridView8->Rows->Clear();
+			dataGridView9->Rows->Clear();
+			dataGridView7->Columns->Clear();
+			dataGridView8->Columns->Clear();
+			dataGridView9->Columns->Clear();
+
+			int n = Convert::ToInt32(textBox3_n->Text);
+			int m = Convert::ToInt32(textBox3_m->Text);
+			double eps = Convert::ToDouble(textBox3_eps->Text);
+			int count_of_iter = Convert::ToInt32(textBox3_count->Text);
+			int output = Convert::ToInt32(textBox3_out->Text);
+
+			double accuracy = 0;
+			double accuracy2 = 0;
+			int spent_iter = count_of_iter;
+			int spent_iter2 = count_of_iter;
+
+			double x_for_max = 0;
+			double y_for_max = 0;
+
+			/*if (n>10 || m>11)
+				fill_table(n/10, m/10, dataGridView4, dataGridView5, dataGridView6);
+			else
+				fill_table(n, m, dataGridView4, dataGridView5, dataGridView6);*/
+			if (n < output && m < output) {
+				fill_table(n, m, dataGridView7, dataGridView8, dataGridView9);
+			}
+			Dirichlet_Main Task(n, m);
+			Dirichlet_Main Task2(2 * n, 2 * m);
+			if (radioButton5->Checked)
+			{
+				accuracy = Task.Simple_iteration_iter(count_of_iter);
+				accuracy2 = Task2.Simple_iteration_iter(count_of_iter);
+			}
+			else
+			{
+				accuracy = Task.Simple_iteration_eps(eps, spent_iter);
+				accuracy2 = Task2.Simple_iteration_eps(eps, spent_iter2);
+			}
+
+			label33->Text = "задача решена за " + Convert::ToString(spent_iter) + "итераций";
+			label32->Text = "точность метода =  " + Convert::ToString(accuracy);
+			label34->Text = "точность метода с 2-м шагом =  " + Convert::ToString(accuracy2);
+
+			/*label4->Text = Convert::ToString(Test.A);
+			label5->Text = Convert::ToString(Test.diag1);
+			label6->Text = Convert::ToString(Test.diag2);
+			label7->Text = Convert::ToString(Test.h);
+			label8->Text = Convert::ToString(Test.k);
+			label9->Text = Convert::ToString(n);
+			label10->Text = Convert::ToString(m);*/
+
+			double max_LP = 0;
+			double LP = 0;
+			if (n < output && m < output) {
+				for (int i = 0; i < n + 1; i++)
+				{
+					dataGridView4[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
+					dataGridView4[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+
+					dataGridView5[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
+					dataGridView5[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+
+					dataGridView6[i + 2, m + 2]->Value = 0;
+					dataGridView6[i + 2, 2]->Value = 0;
+				}
+				for (int j = 1; j < m; j++)
+				{
+					dataGridView4[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
+					dataGridView4[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+
+					dataGridView5[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
+					dataGridView5[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+
+					dataGridView6[2, m - j + 2]->Value = 0;
+					dataGridView6[n + 2, m - j + 2]->Value = 0;
+				}
+			}
+
+			for (int j = 1; j < m; j++)
+				for (int i = 1; i < n; i++)
+				{
+					if (n < output && m < output) {
+						dataGridView4[i + 2, m - j + 2]->Value = Task2.V[Task2.Ind_v(2 * i, 2 * j)];
+						dataGridView5[i + 2, m - j + 2]->Value = Task.V[Task.Ind_v(i, j)];
+					}
+					LP = fabs(Task.V[Task.Ind_v(i, j)] - Task2.V[Task2.Ind_v(2 * i, 2 * j)]);
+					if (n < output && m < output)
+						dataGridView6[i + 2, m - j + 2]->Value = LP;
+					if (LP > max_LP)
+					{
+						max_LP = LP;
+						x_for_max = i;
+						y_for_max = j;
+					}
+				}
+
+			label28->Text = "Max LP = " + Convert::ToString(max_LP);
+			label8->Text = "i = " + Convert::ToString(x_for_max);
+			label9->Text = "j = " + Convert::ToString(y_for_max);
+
+
+		} // end LAB WORK 3
+
         void fill_table(int n, int m, DataGridView ^DGV1, DataGridView ^DGV2, DataGridView ^DGV3)
 		{
 			DGV1->Columns->Add("Column-1", "y");
@@ -1012,5 +1400,6 @@ namespace Nummet6s201 {
 				DGV3[1, i + 2]->Value = Convert::ToString(m - i);
 			}
 		}
+
 };
 }
