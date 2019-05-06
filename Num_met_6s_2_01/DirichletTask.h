@@ -1,5 +1,5 @@
-//#ifndef _DIRICHLETTASK_
-//#define _DIRICHLETTASK_
+#ifndef _DIRICHLETTASK_
+#define _DIRICHLETTASK_
 
 #include <cmath>
 #include <cstdlib>
@@ -18,7 +18,9 @@ public:
 	double Gety (int j);
 	double Zeidel_iter(int num_iter);
 	double Zeidel_eps(double eps,int &spent);
-//protected:
+	double Simple_iteration_iter(int num_iter);
+	double Simple_iteration_eps(double eps, int &spent);
+protected:
 	double a;
 	double b;
 	double c;
@@ -77,4 +79,4 @@ public:
 };
 
 
-//#endif // !_DIRICHLETTASK_
+#endif // !_DIRICHLETTASK_
