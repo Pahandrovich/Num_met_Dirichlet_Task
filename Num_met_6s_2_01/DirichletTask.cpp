@@ -201,15 +201,20 @@ Dirichlet_Main::Dirichlet_Main(int _n, int _m) :Dirichlet_Base(_n, _m)
 		{
 			Right[(n - 1)*(j - 1) + (i - 1)] = -f(a + i * h, c + j * k);
 		}
+	Tau = 0.00001;
 	Init_Right();
 }
 
 double Dirichlet_Base::Simple_iteration_iter(int num_iter)
 {
 	std::vector<double> rs((n - 1)*(m - 1));
-	std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0; });
-	std::for_each(rs.begin(), rs.end(), [](double _n) {_n = 0.0; });
-	double Tau = 0.04;
+	//std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0; });
+	//std::for_each(rs.begin(), rs.end(), [](double _n) {_n = 0.0; });
+	for (int i = 0; i < (n - 1)*(m - 1); i++)
+	{
+		V[i] = 0;
+		rs[i] = 0;
+	}
 	//double addent = 0;
 	int previ = 0;
 	int nexti = 0;
@@ -236,7 +241,7 @@ double Dirichlet_Base::Simple_iteration_iter(int num_iter)
 				if (nexti != n) r += 1.0 / (h*h) * V[Ind_v(nexti, j)];
 				if (prevj != 0) r += 1.0 / (k*k) * V[Ind_v(i, prevj)];
 				if (nextj != m) r += 1.0 / (k*k) * V[Ind_v(i, nextj)];
-				rs[Ind_v(i,j)] = r - Right[Ind_v(i,j)];
+				rs[Ind_v(i,j)] = Right[Ind_v(i,j)] - r;
 			}
 		for (int j = 1; j < m; j++)
 			for (int i = 1; i < n; i++)
@@ -263,16 +268,22 @@ double Dirichlet_Base::Simple_iteration_iter(int num_iter)
 double Dirichlet_Base::Simple_iteration_eps(double eps, int &spent)
 {
 	std::vector<double> rs((n - 1)*(m - 1));
-	std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0; });
-	std::for_each(rs.begin(), rs.end(), [](double _n) {_n = 0.0; });
-	double Tau = 0.04;
+	//std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0; });
+	//std::for_each(rs.begin(), rs.end(), [](double _n) {_n = 0.0; });
+	for (int i = 0; i < (n - 1)*(m - 1); i++)
+	{
+		V[i] = 0;
+		rs[i] = 0;
+	}
+	//double Tau = 0.04;
 	//double addent = 0;
+	spent = 0;
 	int previ = 0;
 	int nexti = 0;
 	int prevj = 0;
 	int nextj = 0;
 	double tempV = 0;
-	double accuracy = 0;
+	double accuracy = eps + 1;
 	double norma = 0;
 	double max_norma = 0;
 	double r = 0;
@@ -293,7 +304,7 @@ double Dirichlet_Base::Simple_iteration_eps(double eps, int &spent)
 				if (nexti != n) r += 1.0 / (h*h) * V[Ind_v(nexti, j)];
 				if (prevj != 0) r += 1.0 / (k*k) * V[Ind_v(i, prevj)];
 				if (nextj != m) r += 1.0 / (k*k) * V[Ind_v(i, nextj)];
-				rs[Ind_v(i, j)] = r - Right[Ind_v(i, j)];
+				rs[Ind_v(i, j)] = Right[Ind_v(i, j)] - r;
 			}
 		for (int j = 1; j < m; j++)
 			for (int i = 1; i < n; i++)

@@ -32,6 +32,7 @@ protected:
 	double A;
 	double diag1;
 	double diag2;
+	double Tau;
 
 	std::vector <double> Right;
 

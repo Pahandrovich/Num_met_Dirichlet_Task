@@ -134,6 +134,7 @@ namespace Nummet6s201 {
 	private: System::Windows::Forms::Label^  label40;
 	private: System::Windows::Forms::DataGridView^  dataGridView7;
 	private: System::Windows::Forms::Button^  button3;
+private: System::Windows::Forms::Label^  label41;
 
 	protected:
 
@@ -226,6 +227,7 @@ namespace Nummet6s201 {
 			this->label40 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView7 = (gcnew System::Windows::Forms::DataGridView());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->label41 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -743,6 +745,7 @@ namespace Nummet6s201 {
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->label41);
 			this->tabPage3->Controls->Add(this->label21);
 			this->tabPage3->Controls->Add(this->label22);
 			this->tabPage3->Controls->Add(this->label23);
@@ -779,7 +782,7 @@ namespace Nummet6s201 {
 			// label21
 			// 
 			this->label21->AutoSize = true;
-			this->label21->Location = System::Drawing::Point(124, 579);
+			this->label21->Location = System::Drawing::Point(124, 589);
 			this->label21->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(21, 13);
@@ -789,7 +792,7 @@ namespace Nummet6s201 {
 			// label22
 			// 
 			this->label22->AutoSize = true;
-			this->label22->Location = System::Drawing::Point(124, 555);
+			this->label22->Location = System::Drawing::Point(124, 565);
 			this->label22->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(21, 13);
@@ -872,7 +875,7 @@ namespace Nummet6s201 {
 			// label32
 			// 
 			this->label32->AutoSize = true;
-			this->label32->Location = System::Drawing::Point(124, 474);
+			this->label32->Location = System::Drawing::Point(124, 460);
 			this->label32->Name = L"label32";
 			this->label32->Size = System::Drawing::Size(157, 13);
 			this->label32->TabIndex = 68;
@@ -881,7 +884,7 @@ namespace Nummet6s201 {
 			// label33
 			// 
 			this->label33->AutoSize = true;
-			this->label33->Location = System::Drawing::Point(124, 445);
+			this->label33->Location = System::Drawing::Point(124, 436);
 			this->label33->Name = L"label33";
 			this->label33->Size = System::Drawing::Size(188, 13);
 			this->label33->TabIndex = 67;
@@ -890,7 +893,7 @@ namespace Nummet6s201 {
 			// label34
 			// 
 			this->label34->AutoSize = true;
-			this->label34->Location = System::Drawing::Point(124, 505);
+			this->label34->Location = System::Drawing::Point(124, 487);
 			this->label34->Name = L"label34";
 			this->label34->Size = System::Drawing::Size(101, 13);
 			this->label34->TabIndex = 66;
@@ -926,7 +929,7 @@ namespace Nummet6s201 {
 			// label38
 			// 
 			this->label38->AutoSize = true;
-			this->label38->Location = System::Drawing::Point(124, 530);
+			this->label38->Location = System::Drawing::Point(124, 540);
 			this->label38->Name = L"label38";
 			this->label38->Size = System::Drawing::Size(162, 13);
 			this->label38->TabIndex = 62;
@@ -999,6 +1002,15 @@ namespace Nummet6s201 {
 			this->button3->Text = L"Пуск";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
+			// label41
+			// 
+			this->label41->AutoSize = true;
+			this->label41->Location = System::Drawing::Point(124, 511);
+			this->label41->Name = L"label41";
+			this->label41->Size = System::Drawing::Size(197, 13);
+			this->label41->TabIndex = 79;
+			this->label41->Text = L"затраченное колличество итераций 2";
 			// 
 			// MyForm
 			// 
@@ -1274,9 +1286,10 @@ namespace Nummet6s201 {
 				accuracy2 = Task2.Simple_iteration_eps(eps, spent_iter2);
 			}
 
-			label33->Text = "задача решена за " + Convert::ToString(spent_iter) + "итераций";
+			label33->Text = "задача решена за " + Convert::ToString(spent_iter) + " итераций";
 			label32->Text = "точность метода =  " + Convert::ToString(accuracy);
 			label34->Text = "точность метода с 2-м шагом =  " + Convert::ToString(accuracy2);
+			label41->Text = "задача c 2-м шагом решена за " + Convert::ToString(spent_iter2) + " итераций";
 
 			/*label4->Text = Convert::ToString(Test.A);
 			label5->Text = Convert::ToString(Test.diag1);
@@ -1291,25 +1304,25 @@ namespace Nummet6s201 {
 			if (n < output && m < output) {
 				for (int i = 0; i < n + 1; i++)
 				{
-					dataGridView4[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
-					dataGridView4[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+					dataGridView7[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
+					dataGridView7[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
 
-					dataGridView5[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
-					dataGridView5[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+					dataGridView8[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
+					dataGridView8[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
 
-					dataGridView6[i + 2, m + 2]->Value = 0;
-					dataGridView6[i + 2, 2]->Value = 0;
+					dataGridView9[i + 2, m + 2]->Value = 0;
+					dataGridView9[i + 2, 2]->Value = 0;
 				}
 				for (int j = 1; j < m; j++)
 				{
-					dataGridView4[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
-					dataGridView4[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+					dataGridView7[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
+					dataGridView7[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
 
-					dataGridView5[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
-					dataGridView5[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+					dataGridView8[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
+					dataGridView8[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
 
-					dataGridView6[2, m - j + 2]->Value = 0;
-					dataGridView6[n + 2, m - j + 2]->Value = 0;
+					dataGridView9[2, m - j + 2]->Value = 0;
+					dataGridView9[n + 2, m - j + 2]->Value = 0;
 				}
 			}
 
@@ -1317,12 +1330,12 @@ namespace Nummet6s201 {
 				for (int i = 1; i < n; i++)
 				{
 					if (n < output && m < output) {
-						dataGridView4[i + 2, m - j + 2]->Value = Task2.V[Task2.Ind_v(2 * i, 2 * j)];
-						dataGridView5[i + 2, m - j + 2]->Value = Task.V[Task.Ind_v(i, j)];
+						dataGridView7[i + 2, m - j + 2]->Value = Task2.V[Task2.Ind_v(2 * i, 2 * j)];
+						dataGridView8[i + 2, m - j + 2]->Value = Task.V[Task.Ind_v(i, j)];
 					}
 					LP = fabs(Task.V[Task.Ind_v(i, j)] - Task2.V[Task2.Ind_v(2 * i, 2 * j)]);
 					if (n < output && m < output)
-						dataGridView6[i + 2, m - j + 2]->Value = LP;
+						dataGridView9[i + 2, m - j + 2]->Value = LP;
 					if (LP > max_LP)
 					{
 						max_LP = LP;
@@ -1331,41 +1344,54 @@ namespace Nummet6s201 {
 					}
 				}
 
-			label28->Text = "Max LP = " + Convert::ToString(max_LP);
-			label8->Text = "i = " + Convert::ToString(x_for_max);
-			label9->Text = "j = " + Convert::ToString(y_for_max);
+			label38->Text = "Max LP = " + Convert::ToString(max_LP);
+			label22->Text = "i = " + Convert::ToString(x_for_max);
+			label21->Text = "j = " + Convert::ToString(y_for_max);
 
 
 		} // end LAB WORK 3
 
         void fill_table(int n, int m, DataGridView ^DGV1, DataGridView ^DGV2, DataGridView ^DGV3)
 		{
+			//DataGridViewCellStyle rowRed = new DataGridViewCellStyle();
 			DGV1->Columns->Add("Column-1", "y");
 			DGV1->Columns[0]->Width = 30;
+			DGV1->Columns[0]->DefaultCellStyle->BackColor = System::Drawing::Color::CadetBlue;
 			DGV1->Columns->Add("Column-2", "j");
 			DGV1->Columns[1]->Width = 30;
+			DGV1->Columns[1]->DefaultCellStyle->BackColor = System::Drawing::Color::Red;
 			DGV1->Rows->Add();
 			DGV1->Rows[0]->HeaderCell->Value = "x";
+			DGV1->Rows[0]->DefaultCellStyle->BackColor = System::Drawing::Color::CadetBlue;
 			DGV1->Rows->Add();
 			DGV1->Rows[1]->HeaderCell->Value = "i";
+			DGV1->Rows[1]->DefaultCellStyle->BackColor = System::Drawing::Color::Red;
 
 			DGV2->Columns->Add("Column-1", "y");
 			DGV2->Columns[0]->Width = 30;
+			DGV2->Columns[0]->DefaultCellStyle->BackColor = System::Drawing::Color::CadetBlue;
 			DGV2->Columns->Add("Column-2", "j");
 			DGV2->Columns[1]->Width = 30;
+			DGV2->Columns[1]->DefaultCellStyle->BackColor = System::Drawing::Color::Red;
 			DGV2->Rows->Add();
 			DGV2->Rows[0]->HeaderCell->Value = "x";
+			DGV2->Rows[0]->DefaultCellStyle->BackColor = System::Drawing::Color::CadetBlue;
 			DGV2->Rows->Add();
 			DGV2->Rows[1]->HeaderCell->Value = "i";
+			DGV2->Rows[1]->DefaultCellStyle->BackColor = System::Drawing::Color::Red;
 
 			DGV3->Columns->Add("Column-1", "y");
 			DGV3->Columns[0]->Width = 30;
+			DGV3->Columns[0]->DefaultCellStyle->BackColor = System::Drawing::Color::CadetBlue;
 			DGV3->Columns->Add("Column-2", "j");
 			DGV3->Columns[1]->Width = 30;
+			DGV3->Columns[1]->DefaultCellStyle->BackColor = System::Drawing::Color::Red;
 			DGV3->Rows->Add();
 			DGV3->Rows[0]->HeaderCell->Value = "x";
+			DGV3->Rows[0]->DefaultCellStyle->BackColor = System::Drawing::Color::CadetBlue;
 			DGV3->Rows->Add();
 			DGV3->Rows[1]->HeaderCell->Value = "i";
+			DGV3->Rows[1]->DefaultCellStyle->BackColor = System::Drawing::Color::Red;
 
 
 			for (int i = 0; i < n + 1; i++)
