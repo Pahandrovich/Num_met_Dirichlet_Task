@@ -334,3 +334,32 @@ double Dirichlet_Base::Simple_iteration_eps(double eps, int &spent)
 	}
 	return accuracy;
 }
+
+double Dirichlet_Main_2::Mu5(double y) const
+{
+	return (exp(sin(PI*((b+a)/2.0)*y)*sin(PI*((b+a)/2.0)*y)));
+}
+
+double Dirichlet_Main_2::Mu6(double x) const
+{
+	return (exp(sin(PI*x*((c + d) / 2.0))*sin(PI*x*((c + d) / 2.0))));
+}
+
+Dirichlet_Main_2::Dirichlet_Main_2(int _n, int _m) :Dirichlet_Test(_n, _m)
+{
+	Right.resize((n - 1)*(m - 1));
+	V.resize((n - 1)*(m - 1));
+	std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0; });
+}
+
+void Dirichlet_Main_2::Init_Right()
+{
+	for (int j = 1; j < m; j++)
+		for (int i = 1; i < n; i++)
+		{
+			if (i - 1 == 0) Right[(n - 1)*(j - 1) + (i - 1)] -= Mu1(c + j * k) / (h*h);
+			if (i + 1 == n) Right[(n - 1)*(j - 1) + (i - 1)] -= Mu2(c + j * k) / (h*h);
+			if (j - 1 == 0) Right[(n - 1)*(j - 1) + (i - 1)] -= Mu3(a + i * h) / (k*k);
+			if (j + 1 == m) Right[(n - 1)*(j - 1) + (i - 1)] -= Mu4(a + i * h) / (k*k);
+		}
+}

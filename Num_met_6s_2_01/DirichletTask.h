@@ -18,8 +18,8 @@ public:
 	double Gety (int j);
 	double Zeidel_iter(int num_iter);
 	double Zeidel_eps(double eps,int &spent);
-	double Simple_iteration_iter(int num_iter);
-	double Simple_iteration_eps(double eps, int &spent);
+	virtual double Simple_iteration_iter(int num_iter);
+	virtual double Simple_iteration_eps(double eps, int &spent);
 protected:
 	double a;
 	double b;
@@ -42,7 +42,7 @@ protected:
 	virtual double Mu4(double x) const = 0;
 
 	virtual double f(double x, double y) const = 0;
-	void Init_Right();
+	virtual void Init_Right();
 	//double calc_accuracy(std::vector<double> &a, std::vector<double> &b);
 	
 	
@@ -76,6 +76,22 @@ public:
 	//virtual void Init_Right();
 public:
 	Dirichlet_Main(int _n, int _m);
+
+};
+
+class Dirichlet_Main_2 : public Dirichlet_Test
+{
+public:
+	virtual double Mu5(double y) const;
+	virtual double Mu6(double x) const;
+
+	double Simple_iteration_iter(int num_iter);
+	double Simple_iteration_eps(double eps, int &spent);
+	
+	virtual void Init_Right();
+public:
+	Dirichlet_Main_2(int _n, int _m);
+
 
 };
 
