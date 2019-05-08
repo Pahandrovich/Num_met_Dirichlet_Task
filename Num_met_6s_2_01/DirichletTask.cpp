@@ -53,6 +53,13 @@ Dirichlet_Base::Dirichlet_Base(int _n, int _m)
 	V.resize((n - 1)*(m - 1));
 	std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0;});
 
+	double lambda_min = 4.0 / h / h * sin(PI / 2.0 / n) * sin(PI / 2.0 / n)
+		+ 4.0 / k / k * sin(PI / 2.0 / m) * sin(PI / 2.0 / m);
+	double lambda_max = 4.0 / h / h * sin(PI * (n - 1) / 2.0 / n) * sin(PI * (n - 1) / 2.0 / n)
+		+ 4.0 / k / k * sin(PI * (m - 1) / 2.0 / m) * sin(PI * (m - 1) / 2.0 / m);
+	//Tau = 0.00001;
+	Tau = 2.0 / (lambda_max + lambda_min);
+
 }
 
 double Dirichlet_Test::f(double x, double y) const
@@ -201,7 +208,7 @@ Dirichlet_Main::Dirichlet_Main(int _n, int _m) :Dirichlet_Base(_n, _m)
 		{
 			Right[(n - 1)*(j - 1) + (i - 1)] = -f(a + i * h, c + j * k);
 		}
-	Tau = 0.00001;
+	
 	Init_Right();
 }
 
