@@ -135,6 +135,48 @@ namespace Nummet6s201 {
 	private: System::Windows::Forms::DataGridView^  dataGridView7;
 	private: System::Windows::Forms::Button^  button3;
 private: System::Windows::Forms::Label^  label41;
+private: System::Windows::Forms::Label^  label42;
+
+
+
+private: System::Windows::Forms::GroupBox^  groupBox1;
+private: System::Windows::Forms::TabPage^  tabPage4;
+private: System::Windows::Forms::Label^  label43;
+private: System::Windows::Forms::GroupBox^  groupBox4;
+private: System::Windows::Forms::RadioButton^  radioButton11;
+private: System::Windows::Forms::RadioButton^  radioButton12;
+
+private: System::Windows::Forms::Label^  label45;
+private: System::Windows::Forms::Label^  label46;
+private: System::Windows::Forms::Label^  label47;
+private: System::Windows::Forms::TextBox^  textBox4_out;
+
+private: System::Windows::Forms::TextBox^  textBox4_eps;
+
+private: System::Windows::Forms::TextBox^  textBox4_count;
+
+private: System::Windows::Forms::Label^  label48;
+private: System::Windows::Forms::Label^  label49;
+private: System::Windows::Forms::Label^  label50;
+private: System::Windows::Forms::Label^  label51;
+
+private: System::Windows::Forms::Label^  label53;
+private: System::Windows::Forms::Label^  label54;
+private: System::Windows::Forms::Label^  label55;
+private: System::Windows::Forms::Label^  label56;
+private: System::Windows::Forms::DataGridView^  dataGridView12;
+
+
+private: System::Windows::Forms::DataGridView^  dataGridView11;
+private: System::Windows::Forms::TextBox^  textBox4_m;
+
+private: System::Windows::Forms::TextBox^  textBox4_n;
+
+private: System::Windows::Forms::Label^  label57;
+private: System::Windows::Forms::Label^  label58;
+private: System::Windows::Forms::DataGridView^  dataGridView10;
+
+private: System::Windows::Forms::Button^  button4;
 
 	protected:
 
@@ -202,12 +244,15 @@ private: System::Windows::Forms::Label^  label41;
 			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->label42 = (gcnew System::Windows::Forms::Label());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
+			this->label41 = (gcnew System::Windows::Forms::Label());
 			this->label21 = (gcnew System::Windows::Forms::Label());
 			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->textBox3_out = (gcnew System::Windows::Forms::TextBox());
-			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
 			this->textBox3_eps = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3_count = (gcnew System::Windows::Forms::TextBox());
 			this->label24 = (gcnew System::Windows::Forms::Label());
@@ -227,7 +272,33 @@ private: System::Windows::Forms::Label^  label41;
 			this->label40 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView7 = (gcnew System::Windows::Forms::DataGridView());
 			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->label41 = (gcnew System::Windows::Forms::Label());
+			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->label43 = (gcnew System::Windows::Forms::Label());
+			this->groupBox4 = (gcnew System::Windows::Forms::GroupBox());
+			this->radioButton11 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton12 = (gcnew System::Windows::Forms::RadioButton());
+			this->label45 = (gcnew System::Windows::Forms::Label());
+			this->label46 = (gcnew System::Windows::Forms::Label());
+			this->label47 = (gcnew System::Windows::Forms::Label());
+			this->textBox4_out = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4_eps = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4_count = (gcnew System::Windows::Forms::TextBox());
+			this->label48 = (gcnew System::Windows::Forms::Label());
+			this->label49 = (gcnew System::Windows::Forms::Label());
+			this->label50 = (gcnew System::Windows::Forms::Label());
+			this->label51 = (gcnew System::Windows::Forms::Label());
+			this->label53 = (gcnew System::Windows::Forms::Label());
+			this->label54 = (gcnew System::Windows::Forms::Label());
+			this->label55 = (gcnew System::Windows::Forms::Label());
+			this->label56 = (gcnew System::Windows::Forms::Label());
+			this->dataGridView12 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridView11 = (gcnew System::Windows::Forms::DataGridView());
+			this->textBox4_m = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4_n = (gcnew System::Windows::Forms::TextBox());
+			this->label57 = (gcnew System::Windows::Forms::Label());
+			this->label58 = (gcnew System::Windows::Forms::Label());
+			this->dataGridView10 = (gcnew System::Windows::Forms::DataGridView());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -238,9 +309,15 @@ private: System::Windows::Forms::Label^  label41;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
 			this->tabPage3->SuspendLayout();
+			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView9))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView7))->BeginInit();
+			this->tabPage4->SuspendLayout();
+			this->groupBox4->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView12))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView11))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView10))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
@@ -266,6 +343,7 @@ private: System::Windows::Forms::Label^  label41;
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage3);
+			this->tabControl1->Controls->Add(this->tabPage4);
 			this->tabControl1->Location = System::Drawing::Point(2, 3);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
@@ -745,13 +823,13 @@ private: System::Windows::Forms::Label^  label41;
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->label42);
+			this->tabPage3->Controls->Add(this->groupBox1);
 			this->tabPage3->Controls->Add(this->label41);
 			this->tabPage3->Controls->Add(this->label21);
 			this->tabPage3->Controls->Add(this->label22);
 			this->tabPage3->Controls->Add(this->label23);
 			this->tabPage3->Controls->Add(this->textBox3_out);
-			this->tabPage3->Controls->Add(this->radioButton6);
-			this->tabPage3->Controls->Add(this->radioButton5);
 			this->tabPage3->Controls->Add(this->textBox3_eps);
 			this->tabPage3->Controls->Add(this->textBox3_count);
 			this->tabPage3->Controls->Add(this->label24);
@@ -776,8 +854,60 @@ private: System::Windows::Forms::Label^  label41;
 			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage3->Size = System::Drawing::Size(1424, 606);
 			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"tabPage3";
+			this->tabPage3->Text = L"метод простой итерации ОСН";
 			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// label42
+			// 
+			this->label42->AutoSize = true;
+			this->label42->Location = System::Drawing::Point(1091, 527);
+			this->label42->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label42->Name = L"label42";
+			this->label42->Size = System::Drawing::Size(182, 13);
+			this->label42->TabIndex = 82;
+			this->label42->Text = L"Метод простой итерации с Tau opt";
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->radioButton5);
+			this->groupBox1->Controls->Add(this->radioButton6);
+			this->groupBox1->Location = System::Drawing::Point(666, 432);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(140, 73);
+			this->groupBox1->TabIndex = 80;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"Критерий остановки";
+			// 
+			// radioButton5
+			// 
+			this->radioButton5->AutoSize = true;
+			this->radioButton5->Location = System::Drawing::Point(19, 22);
+			this->radioButton5->Name = L"radioButton5";
+			this->radioButton5->Size = System::Drawing::Size(72, 17);
+			this->radioButton5->TabIndex = 73;
+			this->radioButton5->Text = L"итерации";
+			this->radioButton5->UseVisualStyleBackColor = true;
+			// 
+			// radioButton6
+			// 
+			this->radioButton6->AutoSize = true;
+			this->radioButton6->Checked = true;
+			this->radioButton6->Location = System::Drawing::Point(19, 46);
+			this->radioButton6->Name = L"radioButton6";
+			this->radioButton6->Size = System::Drawing::Size(70, 17);
+			this->radioButton6->TabIndex = 74;
+			this->radioButton6->TabStop = true;
+			this->radioButton6->Text = L"точность";
+			this->radioButton6->UseVisualStyleBackColor = true;
+			// 
+			// label41
+			// 
+			this->label41->AutoSize = true;
+			this->label41->Location = System::Drawing::Point(124, 511);
+			this->label41->Name = L"label41";
+			this->label41->Size = System::Drawing::Size(197, 13);
+			this->label41->TabIndex = 79;
+			this->label41->Text = L"затраченное колличество итераций 2";
 			// 
 			// label21
 			// 
@@ -815,28 +945,6 @@ private: System::Windows::Forms::Label^  label41;
 			this->textBox3_out->Size = System::Drawing::Size(100, 20);
 			this->textBox3_out->TabIndex = 75;
 			this->textBox3_out->Text = L"21";
-			// 
-			// radioButton6
-			// 
-			this->radioButton6->AutoSize = true;
-			this->radioButton6->Location = System::Drawing::Point(716, 456);
-			this->radioButton6->Name = L"radioButton6";
-			this->radioButton6->Size = System::Drawing::Size(70, 17);
-			this->radioButton6->TabIndex = 74;
-			this->radioButton6->Text = L"точность";
-			this->radioButton6->UseVisualStyleBackColor = true;
-			// 
-			// radioButton5
-			// 
-			this->radioButton5->AutoSize = true;
-			this->radioButton5->Checked = true;
-			this->radioButton5->Location = System::Drawing::Point(716, 432);
-			this->radioButton5->Name = L"radioButton5";
-			this->radioButton5->Size = System::Drawing::Size(72, 17);
-			this->radioButton5->TabIndex = 73;
-			this->radioButton5->TabStop = true;
-			this->radioButton5->Text = L"итерации";
-			this->radioButton5->UseVisualStyleBackColor = true;
 			// 
 			// textBox3_eps
 			// 
@@ -1003,14 +1111,275 @@ private: System::Windows::Forms::Label^  label41;
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
-			// label41
+			// tabPage4
 			// 
-			this->label41->AutoSize = true;
-			this->label41->Location = System::Drawing::Point(124, 511);
-			this->label41->Name = L"label41";
-			this->label41->Size = System::Drawing::Size(197, 13);
-			this->label41->TabIndex = 79;
-			this->label41->Text = L"затраченное колличество итераций 2";
+			this->tabPage4->Controls->Add(this->label43);
+			this->tabPage4->Controls->Add(this->groupBox4);
+			this->tabPage4->Controls->Add(this->label45);
+			this->tabPage4->Controls->Add(this->label46);
+			this->tabPage4->Controls->Add(this->label47);
+			this->tabPage4->Controls->Add(this->textBox4_out);
+			this->tabPage4->Controls->Add(this->textBox4_eps);
+			this->tabPage4->Controls->Add(this->textBox4_count);
+			this->tabPage4->Controls->Add(this->label48);
+			this->tabPage4->Controls->Add(this->label49);
+			this->tabPage4->Controls->Add(this->label50);
+			this->tabPage4->Controls->Add(this->label51);
+			this->tabPage4->Controls->Add(this->label53);
+			this->tabPage4->Controls->Add(this->label54);
+			this->tabPage4->Controls->Add(this->label55);
+			this->tabPage4->Controls->Add(this->label56);
+			this->tabPage4->Controls->Add(this->dataGridView12);
+			this->tabPage4->Controls->Add(this->dataGridView11);
+			this->tabPage4->Controls->Add(this->textBox4_m);
+			this->tabPage4->Controls->Add(this->textBox4_n);
+			this->tabPage4->Controls->Add(this->label57);
+			this->tabPage4->Controls->Add(this->label58);
+			this->tabPage4->Controls->Add(this->dataGridView10);
+			this->tabPage4->Controls->Add(this->button4);
+			this->tabPage4->Location = System::Drawing::Point(4, 22);
+			this->tabPage4->Name = L"tabPage4";
+			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage4->Size = System::Drawing::Size(1424, 606);
+			this->tabPage4->TabIndex = 3;
+			this->tabPage4->Text = L"метод простой итерации ТЕСТ";
+			this->tabPage4->UseVisualStyleBackColor = true;
+			// 
+			// label43
+			// 
+			this->label43->AutoSize = true;
+			this->label43->Location = System::Drawing::Point(1080, 527);
+			this->label43->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label43->Name = L"label43";
+			this->label43->Size = System::Drawing::Size(182, 13);
+			this->label43->TabIndex = 109;
+			this->label43->Text = L"Метод простой итерации с Tau opt";
+			// 
+			// groupBox4
+			// 
+			this->groupBox4->Controls->Add(this->radioButton11);
+			this->groupBox4->Controls->Add(this->radioButton12);
+			this->groupBox4->Location = System::Drawing::Point(655, 432);
+			this->groupBox4->Name = L"groupBox4";
+			this->groupBox4->Size = System::Drawing::Size(140, 73);
+			this->groupBox4->TabIndex = 107;
+			this->groupBox4->TabStop = false;
+			this->groupBox4->Text = L"Критерий остановки";
+			// 
+			// radioButton11
+			// 
+			this->radioButton11->AutoSize = true;
+			this->radioButton11->Location = System::Drawing::Point(19, 22);
+			this->radioButton11->Name = L"radioButton11";
+			this->radioButton11->Size = System::Drawing::Size(72, 17);
+			this->radioButton11->TabIndex = 73;
+			this->radioButton11->Text = L"итерации";
+			this->radioButton11->UseVisualStyleBackColor = true;
+			// 
+			// radioButton12
+			// 
+			this->radioButton12->AutoSize = true;
+			this->radioButton12->Checked = true;
+			this->radioButton12->Location = System::Drawing::Point(19, 46);
+			this->radioButton12->Name = L"radioButton12";
+			this->radioButton12->Size = System::Drawing::Size(70, 17);
+			this->radioButton12->TabIndex = 74;
+			this->radioButton12->TabStop = true;
+			this->radioButton12->Text = L"точность";
+			this->radioButton12->UseVisualStyleBackColor = true;
+			// 
+			// label45
+			// 
+			this->label45->AutoSize = true;
+			this->label45->Location = System::Drawing::Point(113, 576);
+			this->label45->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label45->Name = L"label45";
+			this->label45->Size = System::Drawing::Size(21, 13);
+			this->label45->TabIndex = 105;
+			this->label45->Text = L"j = ";
+			// 
+			// label46
+			// 
+			this->label46->AutoSize = true;
+			this->label46->Location = System::Drawing::Point(113, 552);
+			this->label46->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label46->Name = L"label46";
+			this->label46->Size = System::Drawing::Size(21, 13);
+			this->label46->TabIndex = 104;
+			this->label46->Text = L"i = ";
+			// 
+			// label47
+			// 
+			this->label47->AutoSize = true;
+			this->label47->Location = System::Drawing::Point(846, 546);
+			this->label47->Name = L"label47";
+			this->label47->Size = System::Drawing::Size(22, 13);
+			this->label47->TabIndex = 103;
+			this->label47->Text = L"out";
+			// 
+			// textBox4_out
+			// 
+			this->textBox4_out->Location = System::Drawing::Point(885, 544);
+			this->textBox4_out->Name = L"textBox4_out";
+			this->textBox4_out->Size = System::Drawing::Size(100, 20);
+			this->textBox4_out->TabIndex = 102;
+			this->textBox4_out->Text = L"21";
+			// 
+			// textBox4_eps
+			// 
+			this->textBox4_eps->Location = System::Drawing::Point(885, 455);
+			this->textBox4_eps->Name = L"textBox4_eps";
+			this->textBox4_eps->Size = System::Drawing::Size(100, 20);
+			this->textBox4_eps->TabIndex = 101;
+			this->textBox4_eps->Text = L"1e-6";
+			// 
+			// textBox4_count
+			// 
+			this->textBox4_count->Location = System::Drawing::Point(885, 429);
+			this->textBox4_count->Name = L"textBox4_count";
+			this->textBox4_count->Size = System::Drawing::Size(100, 20);
+			this->textBox4_count->TabIndex = 100;
+			this->textBox4_count->Text = L"30";
+			// 
+			// label48
+			// 
+			this->label48->AutoSize = true;
+			this->label48->Location = System::Drawing::Point(837, 458);
+			this->label48->Name = L"label48";
+			this->label48->Size = System::Drawing::Size(24, 13);
+			this->label48->TabIndex = 99;
+			this->label48->Text = L"eps";
+			// 
+			// label49
+			// 
+			this->label49->AutoSize = true;
+			this->label49->Location = System::Drawing::Point(816, 432);
+			this->label49->Name = L"label49";
+			this->label49->Size = System::Drawing::Size(63, 13);
+			this->label49->TabIndex = 98;
+			this->label49->Text = L"count of iter";
+			// 
+			// label50
+			// 
+			this->label50->AutoSize = true;
+			this->label50->Location = System::Drawing::Point(113, 460);
+			this->label50->Name = L"label50";
+			this->label50->Size = System::Drawing::Size(157, 13);
+			this->label50->TabIndex = 97;
+			this->label50->Text = L"достигнутая точность метода";
+			// 
+			// label51
+			// 
+			this->label51->AutoSize = true;
+			this->label51->Location = System::Drawing::Point(113, 436);
+			this->label51->Name = L"label51";
+			this->label51->Size = System::Drawing::Size(188, 13);
+			this->label51->TabIndex = 96;
+			this->label51->Text = L"затраченное колличество итераций";
+			// 
+			// label53
+			// 
+			this->label53->AutoSize = true;
+			this->label53->Location = System::Drawing::Point(1135, 392);
+			this->label53->Name = L"label53";
+			this->label53->Size = System::Drawing::Size(54, 13);
+			this->label53->TabIndex = 94;
+			this->label53->Text = L"разность";
+			// 
+			// label54
+			// 
+			this->label54->AutoSize = true;
+			this->label54->Location = System::Drawing::Point(652, 392);
+			this->label54->Name = L"label54";
+			this->label54->Size = System::Drawing::Size(107, 13);
+			this->label54->TabIndex = 93;
+			this->label54->Text = L"численное решение";
+			// 
+			// label55
+			// 
+			this->label55->AutoSize = true;
+			this->label55->Location = System::Drawing::Point(185, 392);
+			this->label55->Name = L"label55";
+			this->label55->Size = System::Drawing::Size(88, 13);
+			this->label55->TabIndex = 92;
+			this->label55->Text = L"точное решение";
+			// 
+			// label56
+			// 
+			this->label56->AutoSize = true;
+			this->label56->Location = System::Drawing::Point(113, 527);
+			this->label56->Name = L"label56";
+			this->label56->Size = System::Drawing::Size(162, 13);
+			this->label56->TabIndex = 91;
+			this->label56->Text = L"макс. локальная погрешность";
+			// 
+			// dataGridView12
+			// 
+			this->dataGridView12->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView12->Location = System::Drawing::Point(912, 6);
+			this->dataGridView12->Name = L"dataGridView12";
+			this->dataGridView12->Size = System::Drawing::Size(447, 383);
+			this->dataGridView12->TabIndex = 90;
+			// 
+			// dataGridView11
+			// 
+			this->dataGridView11->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView11->Location = System::Drawing::Point(459, 6);
+			this->dataGridView11->Name = L"dataGridView11";
+			this->dataGridView11->Size = System::Drawing::Size(447, 383);
+			this->dataGridView11->TabIndex = 89;
+			// 
+			// textBox4_m
+			// 
+			this->textBox4_m->Location = System::Drawing::Point(885, 504);
+			this->textBox4_m->Name = L"textBox4_m";
+			this->textBox4_m->Size = System::Drawing::Size(100, 20);
+			this->textBox4_m->TabIndex = 88;
+			this->textBox4_m->Text = L"5";
+			// 
+			// textBox4_n
+			// 
+			this->textBox4_n->Location = System::Drawing::Point(885, 478);
+			this->textBox4_n->Name = L"textBox4_n";
+			this->textBox4_n->Size = System::Drawing::Size(100, 20);
+			this->textBox4_n->TabIndex = 87;
+			this->textBox4_n->Text = L"4";
+			// 
+			// label57
+			// 
+			this->label57->AutoSize = true;
+			this->label57->Location = System::Drawing::Point(846, 507);
+			this->label57->Name = L"label57";
+			this->label57->Size = System::Drawing::Size(15, 13);
+			this->label57->TabIndex = 86;
+			this->label57->Text = L"m";
+			// 
+			// label58
+			// 
+			this->label58->AutoSize = true;
+			this->label58->Location = System::Drawing::Point(846, 478);
+			this->label58->Name = L"label58";
+			this->label58->Size = System::Drawing::Size(13, 13);
+			this->label58->TabIndex = 85;
+			this->label58->Text = L"n";
+			// 
+			// dataGridView10
+			// 
+			this->dataGridView10->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView10->Location = System::Drawing::Point(6, 6);
+			this->dataGridView10->Name = L"dataGridView10";
+			this->dataGridView10->Size = System::Drawing::Size(447, 383);
+			this->dataGridView10->TabIndex = 84;
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(1099, 462);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(134, 62);
+			this->button4->TabIndex = 83;
+			this->button4->Text = L"Пуск";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
 			// MyForm
 			// 
@@ -1033,14 +1402,23 @@ private: System::Windows::Forms::Label^  label41;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
 			this->tabPage3->ResumeLayout(false);
 			this->tabPage3->PerformLayout();
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView9))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView8))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView7))->EndInit();
+			this->tabPage4->ResumeLayout(false);
+			this->tabPage4->PerformLayout();
+			this->groupBox4->ResumeLayout(false);
+			this->groupBox4->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView12))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView11))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView10))->EndInit();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
-		//void fill_table(int n, int m);
+
 		private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) { // TEST TASK
 
 			dataGridView1->Rows->Clear();
@@ -1071,14 +1449,6 @@ private: System::Windows::Forms::Label^  label41;
 			label12->Text = "задача решена за " + Convert::ToString(spent_iter) + "итераций";
 			label13->Text = "точность метода =  "+Convert::ToString(accuracy);
 
-			/*label4->Text = Convert::ToString(Test.A);
-			label5->Text = Convert::ToString(Test.diag1);
-			label6->Text = Convert::ToString(Test.diag2);
-			label7->Text = Convert::ToString(Test.h);
-			label8->Text = Convert::ToString(Test.k);
-			label9->Text = Convert::ToString(n);
-			label10->Text = Convert::ToString(m);*/
-
 			double max_GP = 0;
 			double GP = 0;
 
@@ -1090,9 +1460,6 @@ private: System::Windows::Forms::Label^  label41;
 
 			for (int i = 0; i < n + 1; i++)
 			{
-				/*dataGridView2[i + 2, m + 2]->Value = Test.U_acc(Test.Getx(i), Test.Gety(0));
-				dataGridView2[i + 2, 2]->Value = Test.U_acc(Test.Getx(i), Test.Gety(m));*/
-
 				dataGridView2[i + 2, m + 2]->Value = Test.Mu3(Test.Getx(i));
 				dataGridView2[i + 2, 2]->Value = Test.Mu4(Test.Getx(i));
 
@@ -1101,9 +1468,6 @@ private: System::Windows::Forms::Label^  label41;
 			}
 			for (int j = 1; j < m; j++)
 			{
-				/*dataGridView2[2, m - j + 2]->Value = Test.U_acc(Test.Getx(0), Test.Gety(j));
-				dataGridView2[n + 2, m - j + 2]->Value = Test.U_acc(Test.Getx(n), Test.Gety(j));*/
-
 				dataGridView2[2, m - j + 2]->Value = Test.Mu1(Test.Gety(j));
 				dataGridView2[n + 2, m - j + 2]->Value = Test.Mu2(Test.Gety(j));
 
@@ -1159,11 +1523,7 @@ private: System::Windows::Forms::Label^  label41;
 
 			double x_for_max = 0;
 			double y_for_max = 0;
-			
-			/*if (n>10 || m>11)
-				fill_table(n/10, m/10, dataGridView4, dataGridView5, dataGridView6);
-			else
-				fill_table(n, m, dataGridView4, dataGridView5, dataGridView6);*/
+
 			if (n < output && m < output) {
 				fill_table(n, m, dataGridView4, dataGridView5, dataGridView6);
 			}
@@ -1183,14 +1543,6 @@ private: System::Windows::Forms::Label^  label41;
 			label19->Text = "задача решена за " + Convert::ToString(spent_iter) + "итераций";
 			label18->Text = "точность метода =  " + Convert::ToString(accuracy);
 			label20->Text = "точность метода с 2-м шагом =  " + Convert::ToString(accuracy2);
-
-			/*label4->Text = Convert::ToString(Test.A);
-			label5->Text = Convert::ToString(Test.diag1);
-			label6->Text = Convert::ToString(Test.diag2);
-			label7->Text = Convert::ToString(Test.h);
-			label8->Text = Convert::ToString(Test.k);
-			label9->Text = Convert::ToString(n);
-			label10->Text = Convert::ToString(m);*/
 
 			double max_LP = 0;
 			double LP = 0;
@@ -1266,10 +1618,6 @@ private: System::Windows::Forms::Label^  label41;
 			double x_for_max = 0;
 			double y_for_max = 0;
 
-			/*if (n>10 || m>11)
-				fill_table(n/10, m/10, dataGridView4, dataGridView5, dataGridView6);
-			else
-				fill_table(n, m, dataGridView4, dataGridView5, dataGridView6);*/
 			if (n < output && m < output) {
 				fill_table(n, m, dataGridView7, dataGridView8, dataGridView9);
 			}
@@ -1290,14 +1638,6 @@ private: System::Windows::Forms::Label^  label41;
 			label32->Text = "точность метода =  " + Convert::ToString(accuracy);
 			label34->Text = "точность метода с 2-м шагом =  " + Convert::ToString(accuracy2);
 			label41->Text = "задача c 2-м шагом решена за " + Convert::ToString(spent_iter2) + " итераций";
-
-			/*label4->Text = Convert::ToString(Test.A);
-			label5->Text = Convert::ToString(Test.diag1);
-			label6->Text = Convert::ToString(Test.diag2);
-			label7->Text = Convert::ToString(Test.h);
-			label8->Text = Convert::ToString(Test.k);
-			label9->Text = Convert::ToString(n);
-			label10->Text = Convert::ToString(m);*/
 
 			double max_LP = 0;
 			double LP = 0;
@@ -1349,11 +1689,100 @@ private: System::Windows::Forms::Label^  label41;
 			label21->Text = "j = " + Convert::ToString(y_for_max);
 
 
-		} // end LAB WORK 3
+		} // end LAB WORK 3 main
+
+		private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) { //  LAB WORK 3 test
+
+			dataGridView10->Rows->Clear();
+			dataGridView11->Rows->Clear();
+			dataGridView12->Rows->Clear();
+			dataGridView10->Columns->Clear();
+			dataGridView11->Columns->Clear();
+			dataGridView12->Columns->Clear();
+
+			int n = Convert::ToInt32(textBox4_n->Text);
+			int m = Convert::ToInt32(textBox4_m->Text);
+			double eps = Convert::ToDouble(textBox4_eps->Text);
+			int count_of_iter = Convert::ToInt32(textBox4_count->Text);
+			int output = Convert::ToInt32(textBox4_out->Text);
+
+			double accuracy = 0;
+			double accuracy2 = 0;
+			int spent_iter = count_of_iter;
+			int spent_iter2 = count_of_iter;
+
+			double x_for_max = 0;
+			double y_for_max = 0;
+
+			if (n < output && m < output) {
+				fill_table(n, m, dataGridView10, dataGridView11, dataGridView12);
+			}
+			Dirichlet_Test Task(n, m);
+			if (radioButton11->Checked)
+			{
+				accuracy = Task.Simple_iteration_iter(count_of_iter);
+			}
+			else
+			{
+				accuracy = Task.Simple_iteration_eps(eps, spent_iter);
+			}
+
+			label51->Text = "задача решена за " + Convert::ToString(spent_iter) + " итераций";
+			label50->Text = "точность метода =  " + Convert::ToString(accuracy);
+
+			double max_LP = 0;
+			double LP = 0;
+			if (n < output && m < output) {
+				for (int i = 0; i < n + 1; i++)
+				{
+					dataGridView10[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
+					dataGridView10[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+
+					dataGridView11[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
+					dataGridView11[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+
+					dataGridView12[i + 2, m + 2]->Value = 0;
+					dataGridView12[i + 2, 2]->Value = 0;
+				}
+				for (int j = 1; j < m; j++)
+				{
+					dataGridView10[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
+					dataGridView10[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+
+					dataGridView11[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
+					dataGridView11[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+
+					dataGridView12[2, m - j + 2]->Value = 0;
+					dataGridView12[n + 2, m - j + 2]->Value = 0;
+				}
+			}
+
+			for (int j = 1; j < m; j++)
+				for (int i = 1; i < n; i++)
+				{
+					if (n < output && m < output) {
+						dataGridView10[i + 2, m - j + 2]->Value = Task.U_acc(Task.Getx(i), Task.Gety(j));
+						dataGridView11[i + 2, m - j + 2]->Value = Task.V[Task.Ind_v(i, j)];
+					}
+					LP = fabs(Task.V[Task.Ind_v(i, j)] - Task.U_acc(Task.Getx(i), Task.Gety(j)));
+					if (n < output && m < output)
+						dataGridView12[i + 2, m - j + 2]->Value = LP;
+					if (LP > max_LP)
+					{
+						max_LP = LP;
+						x_for_max = i;
+						y_for_max = j;
+					}
+				}
+
+			label56->Text = "Max GP = " + Convert::ToString(max_LP);
+			label46->Text = "i = " + Convert::ToString(x_for_max);
+			label45->Text = "j = " + Convert::ToString(y_for_max);
+
+		} // end LAB WORK 3 test
 
         void fill_table(int n, int m, DataGridView ^DGV1, DataGridView ^DGV2, DataGridView ^DGV3)
 		{
-			//DataGridViewCellStyle rowRed = new DataGridViewCellStyle();
 			DGV1->Columns->Add("Column-1", "y");
 			DGV1->Columns[0]->Width = 30;
 			DGV1->Columns[0]->DefaultCellStyle->BackColor = System::Drawing::Color::CadetBlue;
@@ -1426,6 +1855,7 @@ private: System::Windows::Forms::Label^  label41;
 				DGV3[1, i + 2]->Value = Convert::ToString(m - i);
 			}
 		}
+
 
 };
 }
