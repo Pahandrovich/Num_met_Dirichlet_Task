@@ -53,6 +53,13 @@ Dirichlet_Base::Dirichlet_Base(int _n, int _m)
 	V.resize((n - 1)*(m - 1));
 	std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0;});
 
+	double lambda_min = 4.0 / h / h * sin(PI / 2.0 / n) * sin(PI / 2.0 / n)
+		+ 4.0 / k / k * sin(PI / 2.0 / m) * sin(PI / 2.0 / m);
+	double lambda_max = 4.0 / h / h * sin(PI * (n - 1) / 2.0 / n) * sin(PI * (n - 1) / 2.0 / n)
+		+ 4.0 / k / k * sin(PI * (m - 1) / 2.0 / m) * sin(PI * (m - 1) / 2.0 / m);
+	//Tau = 0.00001;
+	Tau = 2.0 / (lambda_max + lambda_min);
+
 }
 
 double Dirichlet_Test::f(double x, double y) const
@@ -201,5 +208,129 @@ Dirichlet_Main::Dirichlet_Main(int _n, int _m) :Dirichlet_Base(_n, _m)
 		{
 			Right[(n - 1)*(j - 1) + (i - 1)] = -f(a + i * h, c + j * k);
 		}
+	
 	Init_Right();
+}
+
+double Dirichlet_Base::Simple_iteration_iter(int num_iter)
+{
+	std::vector<double> rs((n - 1)*(m - 1));
+	//std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0; });
+	//std::for_each(rs.begin(), rs.end(), [](double _n) {_n = 0.0; });
+	for (int i = 0; i < (n - 1)*(m - 1); i++)
+	{
+		V[i] = 0;
+		rs[i] = 0;
+	}
+	//double addent = 0;
+	int previ = 0;
+	int nexti = 0;
+	int prevj = 0;
+	int nextj = 0;
+	double tempV = 0;
+	double accuracy = 0;
+	double norma = 0;
+	double max_norma = 0;
+	double r = 0;
+
+	for (int l = 0; l < num_iter; l++)
+	{
+		max_norma = 0;
+		for (int j = 1; j < m; j++)
+			for (int i = 1; i < n; i++)
+			{
+				previ = i - 1;
+				nexti = i + 1;
+				prevj = j - 1;
+				nextj = j + 1;
+				r = A * V[Ind_v(i, j)];
+				if (previ != 0) r += 1.0 / (h*h) * V[Ind_v(previ, j)];
+				if (nexti != n) r += 1.0 / (h*h) * V[Ind_v(nexti, j)];
+				if (prevj != 0) r += 1.0 / (k*k) * V[Ind_v(i, prevj)];
+				if (nextj != m) r += 1.0 / (k*k) * V[Ind_v(i, nextj)];
+				rs[Ind_v(i,j)] = Right[Ind_v(i,j)] - r;
+			}
+		for (int j = 1; j < m; j++)
+			for (int i = 1; i < n; i++)
+			{
+				tempV = V[Ind_v(i, j)];
+				/*addent = 0;
+				previ = i - 1;
+				nexti = i + 1;
+				prevj = j - 1;
+				nextj = j + 1;
+				if (previ != 0) addent += 1.0 / (h*h) * V[Ind_v(previ, j)];
+				if (nexti != n) addent += 1.0 / (h*h) * V[Ind_v(nexti, j)];
+				if (prevj != 0) addent += 1.0 / (k*k) * V[Ind_v(i, prevj)];
+				if (nextj != m) addent += 1.0 / (k*k) * V[Ind_v(i, nextj)];*/
+				V[Ind_v(i, j)] = tempV - Tau*rs[Ind_v(i,j)];
+				norma = fabs(V[Ind_v(i, j)] - tempV);
+				if (norma > max_norma) max_norma = norma;
+			}
+		accuracy = max_norma;
+	}
+	return accuracy;
+}
+
+double Dirichlet_Base::Simple_iteration_eps(double eps, int &spent)
+{
+	std::vector<double> rs((n - 1)*(m - 1));
+	//std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0; });
+	//std::for_each(rs.begin(), rs.end(), [](double _n) {_n = 0.0; });
+	for (int i = 0; i < (n - 1)*(m - 1); i++)
+	{
+		V[i] = 0;
+		rs[i] = 0;
+	}
+	//double Tau = 0.04;
+	//double addent = 0;
+	spent = 0;
+	int previ = 0;
+	int nexti = 0;
+	int prevj = 0;
+	int nextj = 0;
+	double tempV = 0;
+	double accuracy = eps + 1;
+	double norma = 0;
+	double max_norma = 0;
+	double r = 0;
+
+	while (accuracy > eps)
+	{
+		spent++;
+		max_norma = 0;
+		for (int j = 1; j < m; j++)
+			for (int i = 1; i < n; i++)
+			{
+				previ = i - 1;
+				nexti = i + 1;
+				prevj = j - 1;
+				nextj = j + 1;
+				r = A * V[Ind_v(i, j)];
+				if (previ != 0) r += 1.0 / (h*h) * V[Ind_v(previ, j)];
+				if (nexti != n) r += 1.0 / (h*h) * V[Ind_v(nexti, j)];
+				if (prevj != 0) r += 1.0 / (k*k) * V[Ind_v(i, prevj)];
+				if (nextj != m) r += 1.0 / (k*k) * V[Ind_v(i, nextj)];
+				rs[Ind_v(i, j)] = Right[Ind_v(i, j)] - r;
+			}
+		for (int j = 1; j < m; j++)
+			for (int i = 1; i < n; i++)
+			{
+				tempV = V[Ind_v(i, j)];
+				/*addent = 0;
+				previ = i - 1;
+				nexti = i + 1;
+				prevj = j - 1;
+				nextj = j + 1;
+				if (previ != 0) addent += 1.0 / (h*h) * V[Ind_v(previ, j)];
+				if (nexti != n) addent += 1.0 / (h*h) * V[Ind_v(nexti, j)];
+				if (prevj != 0) addent += 1.0 / (k*k) * V[Ind_v(i, prevj)];
+				if (nextj != m) addent += 1.0 / (k*k) * V[Ind_v(i, nextj)];*/
+				V[Ind_v(i, j)] = tempV - Tau * rs[Ind_v(i, j)];
+				norma = fabs(V[Ind_v(i, j)] - tempV);
+				if (norma > max_norma) max_norma = norma;
+			}
+		accuracy = max_norma;
+	}
+	return accuracy;
 }
