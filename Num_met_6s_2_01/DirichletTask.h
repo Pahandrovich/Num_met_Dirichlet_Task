@@ -86,7 +86,7 @@ public:
 	virtual double Mu6(double x) const;
 
 	virtual double Simple_iteration_iter(int num_iter);
-	//virtual double Simple_iteration_eps(double eps, int &spent);
+	virtual double Simple_iteration_eps(double eps, int &spent);
 	
 	virtual void Init_Right();
 public:
