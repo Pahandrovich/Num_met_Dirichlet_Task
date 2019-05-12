@@ -1507,22 +1507,22 @@ private: System::Windows::Forms::Button^  button5;
 			// radioButton7
 			// 
 			this->radioButton7->AutoSize = true;
+			this->radioButton7->Checked = true;
 			this->radioButton7->Location = System::Drawing::Point(19, 22);
 			this->radioButton7->Name = L"radioButton7";
 			this->radioButton7->Size = System::Drawing::Size(72, 17);
 			this->radioButton7->TabIndex = 73;
+			this->radioButton7->TabStop = true;
 			this->radioButton7->Text = L"итерации";
 			this->radioButton7->UseVisualStyleBackColor = true;
 			// 
 			// radioButton8
 			// 
 			this->radioButton8->AutoSize = true;
-			this->radioButton8->Checked = true;
 			this->radioButton8->Location = System::Drawing::Point(19, 46);
 			this->radioButton8->Name = L"radioButton8";
 			this->radioButton8->Size = System::Drawing::Size(70, 17);
 			this->radioButton8->TabIndex = 74;
-			this->radioButton8->TabStop = true;
 			this->radioButton8->Text = L"точность";
 			this->radioButton8->UseVisualStyleBackColor = true;
 			// 
@@ -1647,9 +1647,9 @@ private: System::Windows::Forms::Button^  button5;
 			this->label68->AutoSize = true;
 			this->label68->Location = System::Drawing::Point(113, 527);
 			this->label68->Name = L"label68";
-			this->label68->Size = System::Drawing::Size(162, 13);
+			this->label68->Size = System::Drawing::Size(168, 13);
 			this->label68->TabIndex = 118;
-			this->label68->Text = L"макс. локальная погрешность";
+			this->label68->Text = L"макс. Глобальная погрешность";
 			// 
 			// dataGridView15
 			// 
@@ -1673,7 +1673,7 @@ private: System::Windows::Forms::Button^  button5;
 			this->textBox5_m->Name = L"textBox5_m";
 			this->textBox5_m->Size = System::Drawing::Size(100, 20);
 			this->textBox5_m->TabIndex = 115;
-			this->textBox5_m->Text = L"5";
+			this->textBox5_m->Text = L"10";
 			// 
 			// textBox5_n
 			// 
@@ -1681,7 +1681,7 @@ private: System::Windows::Forms::Button^  button5;
 			this->textBox5_n->Name = L"textBox5_n";
 			this->textBox5_n->Size = System::Drawing::Size(100, 20);
 			this->textBox5_n->TabIndex = 114;
-			this->textBox5_n->Text = L"4";
+			this->textBox5_n->Text = L"10";
 			// 
 			// label69
 			// 
@@ -2162,57 +2162,72 @@ private: System::Windows::Forms::Button^  button5;
 				accuracy = Task.Simple_iteration_eps(eps, spent_iter);
 			}
 
-			label51->Text = "задача решена за " + Convert::ToString(spent_iter) + " итераций";
-			label50->Text = "точность метода =  " + Convert::ToString(accuracy);
+			label64->Text = "задача решена за " + Convert::ToString(spent_iter) + " итераций";
+			label63->Text = "точность метода =  " + Convert::ToString(accuracy);
 
 			double max_LP = 0;
 			double LP = 0;
 			if (n < output && m < output) {
 				for (int i = 0; i < n + 1; i++)
 				{
-					dataGridView10[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
-					dataGridView10[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+					dataGridView13[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
+					if (i <= n/2) dataGridView13[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+					if (i >= n/2) dataGridView13[i + 2, m/2 + 2]->Value = Task.Mu6(Task.Getx(i));
 
-					dataGridView11[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
-					dataGridView11[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+					dataGridView14[i + 2, m + 2]->Value = Task.Mu3(Task.Getx(i));
+					if (i <= n / 2) dataGridView14[i + 2, 2]->Value = Task.Mu4(Task.Getx(i));
+					if (i >= n / 2) dataGridView14[i + 2, m/2 + 2]->Value = Task.Mu6(Task.Getx(i));
 
-					dataGridView12[i + 2, m + 2]->Value = 0;
-					dataGridView12[i + 2, 2]->Value = 0;
+					dataGridView15[i + 2, m + 2]->Value = 0;
+					//dataGridView15[i + 2, 2]->Value = 0;
+					if (i <= n / 2) dataGridView15[i + 2, 2]->Value = 0;
+					if (i >= n / 2) dataGridView15[i + 2, m / 2 + 2]->Value = 0;
 				}
 				for (int j = 1; j < m; j++)
 				{
-					dataGridView10[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
-					dataGridView10[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+					dataGridView13[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
+					if (j < m/2) dataGridView13[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+					if (j > m/2) dataGridView13[n/2 + 2, m - j + 2]->Value = Task.Mu5(Task.Gety(j));
 
-					dataGridView11[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
-					dataGridView11[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+					dataGridView14[2, m - j + 2]->Value = Task.Mu1(Task.Gety(j));
+					if (j < m / 2) dataGridView14[n + 2, m - j + 2]->Value = Task.Mu2(Task.Gety(j));
+					if (j > m / 2) dataGridView14[n / 2 + 2, m - j + 2]->Value = Task.Mu5(Task.Gety(j));
 
-					dataGridView12[2, m - j + 2]->Value = 0;
-					dataGridView12[n + 2, m - j + 2]->Value = 0;
+					dataGridView15[2, m - j + 2]->Value = 0;
+					if (j < m / 2) dataGridView15[n + 2, m - j + 2]->Value = 0;
+					if (j > m / 2) dataGridView15[n / 2 + 2, m - j + 2]->Value = 0;
 				}
 			}
 
 			for (int j = 1; j < m; j++)
 				for (int i = 1; i < n; i++)
 				{
-					if (n < output && m < output) {
-						dataGridView10[i + 2, m - j + 2]->Value = Task.U_acc(Task.Getx(i), Task.Gety(j));
-						dataGridView11[i + 2, m - j + 2]->Value = Task.V[Task.Ind_v(i, j)];
-					}
-					LP = fabs(Task.V[Task.Ind_v(i, j)] - Task.U_acc(Task.Getx(i), Task.Gety(j)));
-					if (n < output && m < output)
-						dataGridView12[i + 2, m - j + 2]->Value = LP;
-					if (LP > max_LP)
+					if (i < n / 2 || j < m / 2) 
 					{
-						max_LP = LP;
-						x_for_max = i;
-						y_for_max = j;
+						if (n < output && m < output) {
+							dataGridView13[i + 2, m - j + 2]->Value = Task.U_acc(Task.Getx(i), Task.Gety(j));
+							dataGridView14[i + 2, m - j + 2]->Value = Task.V[Task.Ind_v(i, j)];
+						}
+						LP = fabs(Task.V[Task.Ind_v(i, j)] - Task.U_acc(Task.Getx(i), Task.Gety(j)));
+						if (n < output && m < output)
+							dataGridView15[i + 2, m - j + 2]->Value = LP;
+						if (LP > max_LP)
+						{
+							max_LP = LP;
+							x_for_max = i;
+							y_for_max = j;
+						}
 					}
+					//else if (i > n / 2 && j > m / 2)
+					//{
+					//	//dataGridView13[i + 2, m - j + 2]->DefaultCellStyle->BackColor = System::Drawing::Color::Red;
+					//	dataGridView13->Rows[m - j + 2]->Cells[i + 2]->Style->BackColor = System::Drawing::Color::Red;
+					//}
 				}
 
-			label56->Text = "Max GP = " + Convert::ToString(max_LP);
-			label46->Text = "i = " + Convert::ToString(x_for_max);
-			label45->Text = "j = " + Convert::ToString(y_for_max);
+			label68->Text = "Max GP = " + Convert::ToString(max_LP);
+			label59->Text = "i = " + Convert::ToString(x_for_max);
+			label52->Text = "j = " + Convert::ToString(y_for_max);
 
 
 		} // end cut-out area
