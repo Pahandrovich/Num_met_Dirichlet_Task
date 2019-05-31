@@ -1,28 +1,26 @@
-﻿  DirichletTask.cpp
-  MyForm.cpp
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1811): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1812): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1819): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1820): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1903): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1904): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1914): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1915): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1998): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1999): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2009): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2010): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2089): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2090): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2100): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2101): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2181): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2183): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2184): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2196): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2197): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2198): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
-d:\university\vs_projects\nm\num_met_dirichlet_task\num_met_6s_2_01\myform.cpp(7): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
-  Создание кода...
+﻿  MyForm.cpp
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1985): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1986): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1993): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(1994): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2087): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2088): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2098): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2099): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2187): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2188): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2198): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2199): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2278): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2279): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2289): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2290): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2370): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2372): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2373): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2385): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2386): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.h(2387): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+d:\pavel\university\vs_project\num_met_dirichlet_task\num_met_6s_2_01\myform.cpp(7): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
   DirichletTask.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  Num_met_6s_2_01.vcxproj -> D:\University\VS_projects\NM\Num_met_Dirichlet_Task\x64\Debug\Num_met_6s_2_01.exe
+  Num_met_6s_2_01.vcxproj -> D:\PAVEL\University\VS_Project\Num_met_Dirichlet_Task\x64\Debug\Num_met_6s_2_01.exe

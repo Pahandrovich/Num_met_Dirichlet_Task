@@ -11,13 +11,15 @@
 class Dirichlet_Base
 {
 public:
+	double h;
+	double k;
 	std::vector <double> V;
 	int Ind_v(int i, int j) const;
 	double U_acc(double x, double y) const;
 	double Getx (int i);
 	double Gety (int j);
-	double Zeidel_iter(int num_iter);
-	double Zeidel_eps(double eps,int &spent);
+	double Zeidel_iter(int num_iter, double &maxr);
+	double Zeidel_eps(double eps,int &spent, double &maxr);
 	virtual double Simple_iteration_iter(int num_iter);
 	virtual double Simple_iteration_eps(double eps, int &spent);
 protected:
@@ -27,8 +29,7 @@ protected:
 	double d;
 	int n;
 	int m;
-	double h;
-	double k;
+
 	double A;
 	double diag1;
 	double diag2;

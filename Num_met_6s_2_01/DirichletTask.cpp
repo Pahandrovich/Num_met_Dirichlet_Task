@@ -86,10 +86,15 @@ void Dirichlet_Base::Init_Right()
 		}
 }
 
-double Dirichlet_Base::Zeidel_iter(int num_iter)
+double Dirichlet_Base::Zeidel_iter(int num_iter, double &maxr)
 {
+	std::vector<double> rs((n - 1)*(m - 1));
 	//std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0; });
-	for (int i = 0; i < (n - 1)*(m - 1); i++) V[i] = 0;
+	for (int i = 0; i < (n - 1)*(m - 1); i++)
+	{
+		V[i] = 0;
+		rs[i] = 0;
+	}
 	double addent = 0;
 	int previ = 0;
 	int nexti = 0;
@@ -99,9 +104,29 @@ double Dirichlet_Base::Zeidel_iter(int num_iter)
 	double accuracy = 0;
 	double norma = 0;
 	double max_norma = 0;
+	double r = 0;
+	maxr = 0;
 	for (int l = 0; l < num_iter; l++)
 	{
 		max_norma = 0;
+
+		maxr = 0;
+		for (int j = 1; j < m; j++)
+			for (int i = 1; i < n; i++)
+			{
+				previ = i - 1;
+				nexti = i + 1;
+				prevj = j - 1;
+				nextj = j + 1;
+				r = A * V[Ind_v(i, j)];
+				if (previ != 0) r += 1.0 / (h*h) * V[Ind_v(previ, j)];
+				if (nexti != n) r += 1.0 / (h*h) * V[Ind_v(nexti, j)];
+				if (prevj != 0) r += 1.0 / (k*k) * V[Ind_v(i, prevj)];
+				if (nextj != m) r += 1.0 / (k*k) * V[Ind_v(i, nextj)];
+				rs[Ind_v(i, j)] = Right[Ind_v(i, j)] - r;
+				if (fabs(rs[Ind_v(i, j)]) > maxr) maxr = fabs(rs[Ind_v(i, j)]);
+			}
+
 		for (int j = 1; j < m; j++)
 			for (int i = 1; i < n; i++)
 			{
@@ -124,10 +149,14 @@ double Dirichlet_Base::Zeidel_iter(int num_iter)
 	return accuracy;
 }
 
-double Dirichlet_Base::Zeidel_eps(double eps, int &spent)
+double Dirichlet_Base::Zeidel_eps(double eps, int &spent, double &maxr)
 {
-	std::for_each(V.begin(), V.end(), [](double _n) {_n = 0.0; });
-	//for (int i = 0; i < (n - 1)*(m - 1); i++) V[i] = 0;
+	std::vector<double> rs((n - 1)*(m - 1));
+	for (int i = 0; i < (n - 1)*(m - 1); i++)
+	{
+		V[i] = 0;
+		rs[i] = 0;
+	}
 	double addent = 0;
 	int previ = 0;
 	int nexti = 0;
@@ -138,10 +167,30 @@ double Dirichlet_Base::Zeidel_eps(double eps, int &spent)
 	double norma = 0;
 	double max_norma = 0;
 	spent = 0;
+	double r = 0;
 	while (accuracy > eps)
 	{
 		spent++;
 		max_norma = 0;
+
+		maxr = 0;
+		for (int j = 1; j < m; j++)
+			for (int i = 1; i < n; i++)
+			{
+				previ = i - 1;
+				nexti = i + 1;
+				prevj = j - 1;
+				nextj = j + 1;
+				r = A * V[Ind_v(i, j)];
+				if (previ != 0) r += 1.0 / (h*h) * V[Ind_v(previ, j)];
+				if (nexti != n) r += 1.0 / (h*h) * V[Ind_v(nexti, j)];
+				if (prevj != 0) r += 1.0 / (k*k) * V[Ind_v(i, prevj)];
+				if (nextj != m) r += 1.0 / (k*k) * V[Ind_v(i, nextj)];
+				rs[Ind_v(i, j)] = Right[Ind_v(i, j)] - r;
+				if (fabs(rs[Ind_v(i, j)]) > maxr) maxr = fabs(rs[Ind_v(i, j)]);
+			}
+
+
 		for (int j = 1; j < m; j++)
 			for (int i = 1; i < n; i++)
 			{
