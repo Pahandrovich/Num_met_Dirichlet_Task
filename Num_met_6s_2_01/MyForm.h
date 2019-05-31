@@ -2003,8 +2003,8 @@ private: System::Windows::Forms::Label^  label75;
 					if (GP > max_GP)
 					{
 						max_GP = GP;
-						x_for_max = i;
-						y_for_max = j;
+						x_for_max = Test.Getx(i);
+						y_for_max = Test.Gety(j);
 					}
 				}
 
@@ -2113,8 +2113,8 @@ private: System::Windows::Forms::Label^  label75;
 					if (LP > max_LP)
 					{
 						max_LP = LP;
-						x_for_max = i;
-						y_for_max = j;
+						x_for_max = Task.Getx(i);
+						y_for_max = Task.Gety(j);
 					}
 				}
 
